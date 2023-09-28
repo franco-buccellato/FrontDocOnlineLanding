@@ -1,0 +1,10 @@
+
+.canva, .canva-imagen {
+    background-color: var(--color-1-3) !important;
+    border-radius: 20px !important;
+    margin-bottom: 10px;
+}
+
+.canva-botones {
+    margin-bottom: 10px;
+}

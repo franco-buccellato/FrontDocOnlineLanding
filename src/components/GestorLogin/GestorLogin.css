@@ -1,0 +1,27 @@
+.container-usuario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-usuario span {
+    display: inline-block;
+    /* display: flex; */
+}
+
+.container-usuario button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+}   
+
+.container-usuario ion-icon {
+    color: var(--blanco);
+}
+
+.container-usuario:hover ion-icon {
+    color: var(--negro);
+}
