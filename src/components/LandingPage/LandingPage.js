@@ -12,7 +12,6 @@ const LandingPage = () => {
             <SectionNosotros/>
             <ComoFunciona/>
             <Footer/>
-            <Background/>
         </div>
     );
 }

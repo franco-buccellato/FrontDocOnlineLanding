@@ -25,6 +25,7 @@
     "react-scroll": "^1.8.9",
     "react-signature-canvas": "^1.0.6",
     "reactstrap": "^9.1.5",
+    "styled-components": "^6.0.8",
     "tempa-xlsx": "^0.8.20",
     "uniqid": "^5.4.0",
     "update-browserslist-db": "^1.0.11",
