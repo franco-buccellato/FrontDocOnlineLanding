@@ -16,7 +16,6 @@ import logo from '../../imagenes/Logotipo.png';
 
 function Encabezado() {
 
-
     const {esAdministrador} = useContext(UsuarioContext);
 /* 
     const [show, setShow] = useState(false);
