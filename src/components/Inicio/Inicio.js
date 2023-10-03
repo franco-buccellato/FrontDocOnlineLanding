@@ -81,8 +81,8 @@ const Home = styled.div`
 
         .container-img{
             position: absolute;
-            width: 49vw; /* Ancho deseado para la imagen */
-            height: 96vh; /* Altura deseada para la imagen */
+            width: 49vw;
+            height: 96vh; 
             overflow: hidden;
             top: -6vh;
             right: 0;
@@ -188,14 +188,16 @@ const Home = styled.div`
     @media only screen and (max-width: 1540px) {
         height: calc(100vh - 12vh); //se resta el Encabezado
         .content{
+            margin-top: 2rem;
             width: 74%;
-        }    
-        .container-img{
+
             .container-img{
                 width: 45vw; 
                 height: 94vh;
             }   
-        }
+            
+        }    
+
     }
 
     @media only screen and (max-width: 850px){
