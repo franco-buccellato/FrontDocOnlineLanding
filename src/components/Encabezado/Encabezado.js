@@ -251,6 +251,11 @@ const Header = styled.header`
 		}
 	}
 
+    @media only screen and (max-width: 1540px) {
+        .content{
+            width: 74%;
+        }
+    }
 
     @media only screen and (max-width: 1024px) {
         background-color: white;

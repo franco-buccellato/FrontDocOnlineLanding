@@ -96,6 +96,7 @@ const Home = styled.div`
             }
         }
     }
+    
 
     @media only screen and (max-width: 1024px) {
         display: flex;
@@ -184,6 +185,12 @@ const Home = styled.div`
             display: none;
         }
 
+    }
+
+    @media only screen and (max-width: 1540px) {
+        .content{
+            width: 74%;
+        }    
     }
 
     @media only screen and (max-width: 850px){
