@@ -200,11 +200,15 @@ const Home = styled.div`
 
     }
 
-    @media only screen and (max-width: 850px){
+    @media only screen and (max-width: 1024px){
 
+        .content{
+            .container-img{
+                display: none;
+            }    
+        }   
         .img-responsive{
             height: 16rem;
-
             width: 24rem;
         }
     }
