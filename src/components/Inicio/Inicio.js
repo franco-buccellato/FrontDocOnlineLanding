@@ -191,7 +191,6 @@ const Home = styled.div`
             width: 74%;
         }    
         .container-img{
-            display: none;
             .container-img{
                 width: 45vw; 
                 height: 94vh;
