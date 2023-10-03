@@ -169,7 +169,7 @@ const Header = styled.header`
     z-index: 1000;
 
     .content{
-        width: 60%;
+        width: 55%;
         margin: auto;
         display: flex;
     }
