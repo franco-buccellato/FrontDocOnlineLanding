@@ -252,6 +252,7 @@ const Header = styled.header`
 	}
 
     @media only screen and (max-width: 1540px) {
+        height: 12vh;
         .content{
             width: 74%;
         }

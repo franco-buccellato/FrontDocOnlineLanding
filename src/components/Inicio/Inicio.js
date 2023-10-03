@@ -181,16 +181,22 @@ const Home = styled.div`
             }
         }
 
-        .container-img{
-            display: none;
-        }
+
 
     }
 
     @media only screen and (max-width: 1540px) {
+        height: calc(100vh - 12vh); //se resta el Encabezado
         .content{
             width: 74%;
         }    
+        .container-img{
+            display: none;
+            .container-img{
+                width: 45vw; 
+                height: 94vh;
+            }   
+        }
     }
 
     @media only screen and (max-width: 850px){
