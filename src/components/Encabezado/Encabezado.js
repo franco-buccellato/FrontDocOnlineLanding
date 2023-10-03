@@ -182,8 +182,8 @@ const Header = styled.header`
         cursor: pointer;
         .logo--container-img{
             img{
-                width: 60px;
-                height: 60px;
+                width: 3rem;
+                height: 3rem;
             }
         }
         .logo--container-text{
@@ -252,7 +252,7 @@ const Header = styled.header`
 	}
 
 
-    @media only screen and (max-width: 1580px) {
+    @media only screen and (max-width: 1024px) {
         background-color: white;
     .content{
         display: flex;

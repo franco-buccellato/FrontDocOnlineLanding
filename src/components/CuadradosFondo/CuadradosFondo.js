@@ -73,11 +73,4 @@ const Cuadrado4 = styled.span`
     transform: rotate(70deg);
     z-index: 9;
     filter: blur(16px);
-
-
-    @media only screen and (max-width: 850px){
-        display: none;
-    }
-
 `
-
