@@ -148,6 +148,9 @@ const Calidad = styled.div`
                 font-weight: 600;
                 width: 60%;
                 text-align: center;
+                @media only screen and (max-width: 1540px) {
+                    width: 96%;
+                }
             }
         }
         .secondCards-content{
@@ -170,11 +173,16 @@ const Calidad = styled.div`
                 align-items: center;
                 flex-direction: column;
                 img{
-
                     min-height: 10rem;
                     max-height: 10rem;
                     max-width: 10rem;
                     min-width: 10rem;
+                    @media only screen and (max-width: 1540px) {
+                        min-height: 6rem;
+                        max-height: 6rem;
+                        max-width: 6rem;
+                        min-width: 6rem;
+                    }
                 }
                 .second-card-title{
                     font-weight: 600;
@@ -202,22 +210,9 @@ const Calidad = styled.div`
         margin: auto;
         border-radius: 10%;
         transform: rotate(174deg);
+        @media only screen and (max-width: 1540px) {
+            height: 225vh;
+        }
     }
 
-    @media only screen and (max-width: 1540px) {
-        .second-subtitle{
-                width: 96%;
-        }
-        .second-card-info{
-            img{
-                min-height: 6rem;
-                max-height: 6rem;
-                max-width: 6rem;
-                min-width: 6rem;
-            }
-        }
-        .fondoBlanco{
-        height: 225vh;
-    }
-    }
 `
