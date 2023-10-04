@@ -139,7 +139,7 @@ const Calidad = styled.div`
                 margin: auto;
             }
             .second-title{
-                font-size: 1.8rem;
+                font-size: 1.6rem;
                 font-weight: bold;
                 margin: 4rem 0;
             }
@@ -172,6 +172,11 @@ const Calidad = styled.div`
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                @media only screen and (max-width: 1540px) {
+                    padding: 1rem;
+                    min-height: 22rem;
+                    max-height: 22rem;
+                }
                 img{
                     min-height: 10rem;
                     max-height: 10rem;
@@ -212,12 +217,14 @@ const Calidad = styled.div`
         transform: rotate(174deg);
         @media only screen and (max-width: 1540px) {
             height: 225vh;
+            width: 84vw;
         }
     }
 
     @media only screen and (max-width: 1540px) {
         .content{
             width: 74%;
+
         }
     }
 `
