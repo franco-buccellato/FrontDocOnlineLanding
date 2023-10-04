@@ -215,4 +215,9 @@ const Calidad = styled.div`
         }
     }
 
+    @media only screen and (max-width: 1540px) {
+        .content{
+            width: 74%;
+        }
+    }
 `
