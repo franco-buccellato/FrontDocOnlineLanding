@@ -165,7 +165,7 @@ const Header = styled.header`
     width: 100%;
 	height: 10vh;
     background: rgba(255, 255, 255, ${props => props.scroll ? 0.5 : 0});
-    backdrop-filter: ${props => props.scroll ? 'blur(6px)' : 'none'};
+    backdrop-filter: ${props => props.scroll ? 'blur(4px)' : 'none'};
     z-index: 1000;
 
     .content{
