@@ -14,9 +14,9 @@ const LandingPage = () => {
             <CuadradosFondo className='cuadradoFondo'/>
             <Inicio/>
             <CalidadYBeneficios />
-            <SectionNosotros/>
+            {/* <SectionNosotros/>
             <ComoFunciona/>
-            <Footer/>
+            <Footer/> */}
         </div>
     );
 }

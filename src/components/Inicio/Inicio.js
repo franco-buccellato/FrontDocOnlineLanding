@@ -16,8 +16,8 @@ function Inicio() {
             <div className="img-responsive"></div>
             <div className="content">
                 <div className="container-presentacion">
-                    <h2>Tramita tu permiso <br/> de REPROCANN, <br/> sin moverte de tu casa.</h2>
-                    <p><span>Doc.</span> Online conecta pacientes y médicos <br/> de forma práctica a través de un click <br/> desde donde estés, siempre priorizando tu salud!</p>
+                    <h2>Tramita tu permiso de REPROCANN, sin moverte de tu casa.</h2>
+                    <p><span>Doc.</span> Online conecta pacientes y médicos de forma práctica a través de un click desde donde estés, siempre priorizando tu salud!</p>
                     <Button text={"Comenzar ahora"}/>
                 </div>
 
@@ -108,7 +108,8 @@ const Home = styled.div`
         width: 100%;
 
         .img-responsive{
-            margin-top:8rem;
+            margin-top: 16vh;
+            /* margin: calc(12vh + 4rem) 0 4rem 0; */
             -webkit-animation: morph 8s ease-in-out infinite;
             animation: morph 8s ease-in-out infinite;
             background-image: url(${imagenTarjetasResponsive});
@@ -117,10 +118,10 @@ const Home = styled.div`
             background-size: cover;
             border: none;
             border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-            height: 20rem;
+            height: 60rem;
             position: relative;
             transition: all 1s ease-in-out;
-            width: 30rem;
+            width: 90%;
 
             @keyframes morph {
       0% {
@@ -139,15 +140,16 @@ const Home = styled.div`
 
         
         .content{
-            width: 90%;
+            width: 100%;
             display: flex;
             align-items: center;
             flex-direction: column-reverse;
 
             .container-presentacion{
                 max-width: 100%;
+                
                 h2{
-                    font-size: 2.5rem;
+                    font-size: 2rem;
                     margin: 2rem 0 2rem 0;
                     text-align: center;
                 }
@@ -185,10 +187,21 @@ const Home = styled.div`
 
     }
 
+    @media screen and (min-width: 1950px) and (max-width: 2220px) {
+        .content{
+            .container-img{
+                width: 42vw; 
+                height: 96vh;
+            }   
+            
+        }   
+    }
+
+    
+
     @media only screen and (max-width: 1540px) {
         height: calc(100vh - 12vh); //se resta el Encabezado
         .content{
-            margin-top: 2rem;
             width: 74%;
 
             .container-img{
@@ -203,13 +216,10 @@ const Home = styled.div`
     @media only screen and (max-width: 1024px){
 
         .content{
+            width: 90%;
             .container-img{
                 display: none;
             }    
         }   
-        .img-responsive{
-            height: 16rem;
-            width: 24rem;
-        }
     }
 `
