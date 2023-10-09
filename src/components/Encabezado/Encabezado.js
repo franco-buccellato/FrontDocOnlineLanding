@@ -203,9 +203,10 @@ const Header = styled.header`
         text-decoration: none;
         font-weight: 600;
 		font-size: 1.1rem;
-    }:hover {
-	color: var(--var-color-text-hover);
-    transition: all .2s;
+        &:hover {
+	        color: #00b1ff;
+            transition: all .2s;
+        }
     }
     .nav-btn {
 	padding: 20px;
@@ -237,10 +238,15 @@ const Header = styled.header`
             margin: auto;
             padding: inherit;
             li:last-child{
-                border: 2px solid;
+                border: 2px solid transparent;
                 padding: 4px 20px;
                 border-radius: 20px;
                 background-color: white;
+                &:hover{
+                    transition: all .4s;
+                    border: 2px solid #00b1ff;
+                    color: #00b1ff;
+                }
             }
             li{
                 margin: auto;

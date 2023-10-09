@@ -6,6 +6,7 @@ import './LandingPage.css';
 import ComoFunciona from '../ComoFunciona/ComoFunciona';
 import CuadradosFondo from '../CuadradosFondo/CuadradosFondo';
 import CalidadYBeneficios from '../CalidadYBeneficios/CalidadYBeneficios';
+import Servicios from '../Servicios/Servicios';
 
 
 const LandingPage = () => {
@@ -14,7 +15,8 @@ const LandingPage = () => {
             <CuadradosFondo className='cuadradoFondo'/>
             <Inicio/>
             <CalidadYBeneficios />
-            {/* <SectionNosotros/>
+            <Servicios/>
+            {/* 
             <ComoFunciona/>
             <Footer/> */}
         </div>

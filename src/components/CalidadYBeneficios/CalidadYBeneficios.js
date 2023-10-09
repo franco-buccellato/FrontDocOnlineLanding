@@ -76,7 +76,7 @@ export default CalidadYBeneficios;
 
 const Calidad = styled.div`
     width: 100%;
-    padding: 18rem 0 ;
+    padding: 18rem 0 4rem 0 ;
     display: flex;
     justify-content: center;
     align-items: center;
