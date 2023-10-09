@@ -117,6 +117,10 @@ const Cuadrado6 = styled.span`
     background: -moz-linear-gradient(90deg, rgba(0,206,206,1) 0%, rgba(0,177,255,1) 96%); background: -webkit-linear-gradient(90deg, rgba(0,206,206,1) 0%, rgba(0,177,255,1) 96%); background: linear-gradient(90deg, rgba(0,206,206,1) 0%, rgba(0,177,255,1) 96%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cece",endColorstr="#00b1ff",GradientType=1);   
     transform: rotate(70deg);
     z-index: 10;
+    @media only screen and (max-width: 1540px) {
+        top: 92rem;
+        right: 12rem;
+    }
     @media only screen and (max-width: 1024px) {
         display: none;
     }

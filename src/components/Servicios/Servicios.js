@@ -24,7 +24,7 @@ function Servicios() {
                         <div>
                             <p>¡La telemedicina se está utilizando más que nunca! Solicita y programa citas con un click y chatea con profesionales de la salud directamente desde tu computadora o celular, en la comodidad de tu hogar.</p>
                             <br/>
-                            <p>Doc. Online fue diseñado para conectar pacientes y médicos de una manera práctica</p>
+                            <p>Doc. Online fue diseñado para conectar pacientes y médicos de una manera práctica.</p>
                         </div>
 
                     </div>
@@ -46,6 +46,9 @@ const ContenedorServicios = styled.div`
         @media only screen and (max-width: 1540px) {
             width: 74%;
         }
+        @media only screen and (max-width: 1024px) {
+            width: 90%;
+        }
 
         .container-img{
             margin-top: 8rem;
@@ -58,6 +61,9 @@ const ContenedorServicios = styled.div`
             overflow: hidden; 
             position: absolute; 
             border-radius: 10%;
+            @media only screen and (max-width: 1024px) {
+                display: none;
+            }
             @media only screen and (max-width: 1540px) {
                 width: 44rem; 
                 height: 34rem; 
@@ -80,13 +86,19 @@ const ContenedorServicios = styled.div`
             display: flex;
             flex-direction: column;
             text-align: end;
+            @media only screen and (max-width: 1024px) {
+                text-align: center;
+            }
 
             span{
                 color: #00b1ff;
                 text-transform: uppercase;
                 font-size: 1.2rem;
                 font-weight: 600;
-                text-align: end ;
+                text-align: end;
+                @media only screen and (max-width: 1024px) {
+                text-align: center;
+                }
             }
             h3{
                 font-weight: 600;
@@ -98,6 +110,9 @@ const ContenedorServicios = styled.div`
                 flex-direction: column;
                 align-items: end;
                 margin-top: 4rem;
+                @media only screen and (max-width: 1024px) {
+                    text-align: center;
+                }
                 p{
                 font-size: 1.2rem;
                 font-weight: 600;
