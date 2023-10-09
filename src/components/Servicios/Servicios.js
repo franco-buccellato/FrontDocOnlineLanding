@@ -111,12 +111,15 @@ const ContenedorServicios = styled.div`
                 align-items: end;
                 margin-top: 4rem;
                 @media only screen and (max-width: 1024px) {
-                    text-align: center;
+                    align-items: center;
                 }
                 p{
                 font-size: 1.2rem;
                 font-weight: 600;
                 width: 50%;
+                @media only screen and (max-width: 1024px) {
+                    width: 100%;
+                }
 
             }
             }

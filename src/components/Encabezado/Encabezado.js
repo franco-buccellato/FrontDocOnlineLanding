@@ -266,58 +266,58 @@ const Header = styled.header`
 
     @media only screen and (max-width: 1024px) {
         background-color: white;
-    .content{
-        display: flex;
-        justify-content: space-between;
-        width: 90%;
-    }
-	.nav-btn {
-		display: block;
-		opacity: 1;
-		margin-top: 6px;
-	}
+        .content{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+        }
+        .nav-btn {
+            display: block;
+            opacity: 1;
+            margin-top: 6px;
+        }
 
-	nav {
-		position: fixed;
-		top: -140vh;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 1.5rem;
-		background-color: white;
-        position: fixed;
-		transition: 1s;
-		ul{
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			li{
-				margin: 10px 0;
-				padding: 4px;
-			}
-		}
-	}
+        nav {
+            position: fixed;
+            top: -140vh;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            background-color: white;
+            position: fixed;
+            transition: 1s;
+            ul{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                li{
+                    margin: 10px 0;
+                    padding: 4px;
+                }
+            }
+        }
 
-	.responsive_nav {
-		transform: translateY(140vh);
-	}
+        .responsive_nav {
+            transform: translateY(140vh);
+        }
 
-	.nav-close-btn {
-		position: absolute;
-		top: 1rem;
-		right: 4.5rem;
-	}
-	.nav-close-btn{
-		margin-top: 0;
-	}
+        .nav-close-btn {
+            position: absolute;
+            top: 1rem;
+            right: 0.5rem;
+        }
+        .nav-close-btn{
+            margin-top: 0;
+        }
 
-	nav a {
-		font-size: 1.5rem;
-	}
+        nav a {
+            font-size: 1.5rem;
+        }
 }
 
 `

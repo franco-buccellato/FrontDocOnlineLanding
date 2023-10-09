@@ -128,7 +128,7 @@ const Calidad = styled.div`
             gap: 1rem;
             @media only screen and (max-width: 1024px) {
                 flex-direction: column;
-                margin: 4rem 0;
+                margin: 4rem 0 0 0;
             }
             
             .card-info{
