@@ -43,6 +43,9 @@ const ContenedorServicios = styled.div`
         width: 55%;
         margin: auto;
         display: flex;
+        @media only screen and (max-width: 1540px) {
+            width: 74%;
+        }
 
         .container-img{
             margin-top: 8rem;
@@ -55,6 +58,10 @@ const ContenedorServicios = styled.div`
             overflow: hidden; 
             position: absolute; 
             border-radius: 10%;
+            @media only screen and (max-width: 1540px) {
+                width: 44rem; 
+                height: 34rem; 
+            }
             div{
                 img{
                     

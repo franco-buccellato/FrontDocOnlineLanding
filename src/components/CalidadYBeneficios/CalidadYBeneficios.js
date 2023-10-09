@@ -89,9 +89,7 @@ const Calidad = styled.div`
         z-index: 2;
         position: relative;
         @media only screen and (max-width: 1540px) {
-            .content{
                 width: 74%;
-            }
         }
         @media only screen and (max-width: 1024px) {
             width: 90%;
