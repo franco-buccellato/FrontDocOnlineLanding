@@ -51,9 +51,9 @@ const ContenedorServicios = styled.div`
         }
 
         .container-img{
-            margin-top: 8rem;
-            width: 60rem; 
-            height: 38rem; 
+            margin-top: 10rem;
+            width: 58rem; 
+            height: 36rem; 
             left: -10rem;
             background-color: #ccc;
             transform: rotate(340deg); 
@@ -61,6 +61,7 @@ const ContenedorServicios = styled.div`
             overflow: hidden; 
             position: absolute; 
             border-radius: 10%;
+            z-index: 2;
             @media only screen and (max-width: 1024px) {
                 display: none;
             }
@@ -102,7 +103,7 @@ const ContenedorServicios = styled.div`
             }
             h3{
                 font-weight: 600;
-                font-size: 1.5rem;
+                font-size: 1.8rem;
                 margin-top: 3rem;
             }
             div{

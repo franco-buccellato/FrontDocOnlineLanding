@@ -308,8 +308,8 @@ const Header = styled.header`
 
         .nav-close-btn {
             position: absolute;
-            top: 1rem;
-            right: 0.5rem;
+            top: 1.6rem;
+            right: 1.4rem;
         }
         .nav-close-btn{
             margin-top: 0;

@@ -15,6 +15,8 @@ function CuadradosFondo() {
 
             <Cuadrado5></Cuadrado5>
             <Cuadrado6></Cuadrado6>
+
+            <Cuadrado7></Cuadrado7>
         </>
 
     );
@@ -120,6 +122,26 @@ const Cuadrado6 = styled.span`
     @media only screen and (max-width: 1540px) {
         top: 92rem;
         right: 12rem;
+    }
+    @media only screen and (max-width: 1024px) {
+        display: none;
+    }
+`
+
+const Cuadrado7 = styled.span`
+
+    position: absolute;
+    top: 166rem;
+    right: 4rem;
+    width: 2vw;
+    height: 4vh;
+    border-radius: 26%;
+    background: -moz-linear-gradient(90deg, rgba(0,206,206,1) 0%, rgba(0,177,255,1) 96%); background: -webkit-linear-gradient(90deg, rgba(0,206,206,1) 0%, rgba(0,177,255,1) 96%); background: linear-gradient(90deg, rgba(0,206,206,1) 0%, rgba(0,177,255,1) 96%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cece",endColorstr="#00b1ff",GradientType=1);   
+    transform: rotate(70deg);
+    z-index: 10;
+    @media only screen and (max-width: 1540px) {
+        top: 140rem;
+        right: 2rem;
     }
     @media only screen and (max-width: 1024px) {
         display: none;

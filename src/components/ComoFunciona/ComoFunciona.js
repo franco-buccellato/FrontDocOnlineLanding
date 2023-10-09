@@ -1,92 +1,156 @@
-import "./ComoFunciona.css";
-import web1 from '../../imagenes/imagen-sacar-turno.png';
-import web2 from '../../imagenes/imagen-validar.png';
-import web3 from '../../imagenes/iamgen-reprocann.png';
-import web4 from '../../imagenes/Logotipo.png';
-import web5 from '../../imagenes/imagen-medico.png';
-import web6 from '../../imagenes/iamgen-comunicacion.png';
+import styled from 'styled-components';
+
 
 
 function ComoFunciona() {
-    
+
     return (
-        <section className="section-como-funciona" id="como-funciona">
-            <div className='container-como-funciona-title'>
-                <h4>¿Como Funciona?</h4>
-            </div>
-            <div className="servicios-container-1-1">
-                <div className="container-como-funciona-1">
-                    <div className="servicio-1">
-                        <img alt='servicio-1' src={web1}></img>
-                        <div className="descripcion-1">
-                            <h6 className="encabezado-como-funciona-1">Sacar Tunro</h6>
-                            <span>
-                                Una vez solicitado el turno y abonada la consulta el Dr. te llamará en el horario asignado.
-                            </span>
+        <>
+            <Separador />
+            <ContenedorComoFunciona>
+                <div className='content'>
+                    <div className='container-text'>
+                        <span>agilidad utilizando la plataforma</span>
+                        <h3>Como funciona</h3>
+                        <p>Conozca cómo funciona para acceder a las pautas de salud remotas y todos los beneficios que brinda el servicio online.</p>
+<br />
+                        <p>¡Sigue las etapas paso a paso y podrás usarlo de una manera práctica y sensilla!</p>
+                    </div>
+
+                    <div className='container-pasos'>
+                        <div className='pasos paso1'>
+                            <span>1.</span>
+                            <p>Registrarse e iniciar sesión.<br/>¡Es rápido y fácil!</p>
+                            <div className='cuadradoFondo'></div>
                         </div>
+
+                        <div className='pasos paso2'>
+                            <span>2.</span>
+                            <p>Buscar un <br/>médico específico</p>
+                            <div className='cuadradoFondo'></div>
+                        </div>
+
+                        <div className='pasos paso3'>
+                            <span>3.</span>
+                            <p>Seleccione fecha y <br/> hora para programar</p>
+                            <div className='cuadradoFondo'></div>
+                        </div>
+
+                        <div className='pasos paso4'>
+                            <span>4.</span>
+                            <p>Elige la forma <br/> de pago</p>
+                            <div className='cuadradoFondo'></div>
+                        </div>
+
+                        <div className='pasos paso5'>
+                            <span>5.</span>
+                            <p>¡Haz tu cita online <br/> sin salir de casa!</p>
+                            <div className='cuadradoFondo'></div>
+                        </div>
+
                     </div>
                 </div>
-                <div className="container-como-funciona-2">
-                    <div className="servicio-2">
-                        <img alt='servicio-2' src={web2}></img>
-                        <div className="descripcion-2">
-                            <h6 className="encabezado-como-funciona-2">Validas tu identidad</h6>
-                            <span>
-                                Descargando la app "Mi Argentina" deberas validar tu identidad con DNI y foto selfie.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div className="container-como-funciona-3">
-                    <div className="servicio-3">
-                        <img alt='servicio-3' src={web3}></img>
-                        <div className="descripcion-3">
-                            <h6 className="encabezado-como-funciona-3">Reprocann Web</h6>
-                            <span>
-                                Te registras en la web Reprocann del gobierno<br></br>
-                                (https://reprocann.msal.gob.ar)
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="servicios-container-1-2">
-                <div className="container-como-funciona-1">
-                    <div className="servicio-1">
-                        <img alt='servicio-4' src={web4}></img>
-                        <div className="descripcion-1">
-                            <h6 className="encabezado-como-funciona-1">Doc.online Web</h6>
-                            <span>
-                                Te registras en nuestra web para que el medico pueda completar tus datos en la historia clinica.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div className="container-como-funciona-2">
-                    <div className="servicio-2">
-                        <img alt='servicio-5' src={web5}></img>
-                        <div className="descripcion-2">
-                            <h6 className="encabezado-como-funciona-2">Atención Médica</h6>
-                            <span>
-                                En el día y horario asignado del turno realizaremos la consulta vía WhatsApp.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div className="container-como-funciona-3">
-                    <div className="servicio-3">
-                        <img alt='servicio-6' src={web6}></img>
-                        <div className="descripcion-3">
-                            <h6 className="encabezado-como-funciona-3">Vinculación</h6>
-                            <span>
-                                En las próximas 24hs hábiles después del turno, te notificaremos cuando tu vinculación este realizada y te guiaremos paso a paso para que la puedas ver desde tu cuenta en https://reprocann.msal.gob.ar
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </ContenedorComoFunciona>
+
+        </>
+
     );
 }
 
 export default ComoFunciona;
+
+const ContenedorComoFunciona = styled.div`
+    width: 100%;
+    background: white;
+    padding: 8rem 0;
+    margin: 16rem 0;
+    .content{
+        width: 55%;
+        display: flex;
+        margin: 0 auto;
+        gap: 10%;
+        @media only screen and (max-width: 1540px) {
+            width: 74%;
+        }
+        @media only screen and (max-width: 1024px) {
+            width: 90%;
+        }
+
+        .container-text{
+            width: 40%;
+            span{
+                color: #00b1ff;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-weight: 600;
+                text-align: end;
+            }
+            h3{
+                font-weight: 600;
+                font-size: 1.8rem;
+                margin-top: 3rem;
+                margin-bottom: 4rem;
+            }
+            p{
+
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+
+        }
+        .container-pasos{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            .paso2, .paso4{
+                margin-left: auto;
+            }
+            .paso2, .paso3, .paso4, .paso5{
+                margin-top: -2rem;
+            }
+            .pasos{
+                .cuadradoFondo{
+                    width: 8rem;
+                    height: 8rem;
+                    background-color: #f1f1f3;
+                    border-radius: 16%;
+                    position: absolute;
+                    z-index: 1;
+                    margin-top: -120px;
+                    margin-left: -20px;
+                    transform: rotate(340deg);
+                }
+                span{
+                    position: relative;
+                    font-size: 2.8rem;
+                    color: #00b1ff;
+                    font-weight: bold;
+                    z-index: 2;
+                }
+                p{
+                    position: relative;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    z-index: 2;
+                }
+            }
+
+        }
+    }
+`
+
+const Separador = styled.div`
+
+    width: 100%;
+    height: 14rem;
+    background: white;
+    margin-top: 0;
+    z-index: 1;
+    -webkit-transform: skewY(5deg) translateY(100px);
+    -moz-transform: skewY(5deg) translateY(100px);
+    -ms-transform: skewY(5deg) translateY(100px);
+    transform: skewY(5deg) translateY(100px);
+    position: absolute;
+
+
+`
