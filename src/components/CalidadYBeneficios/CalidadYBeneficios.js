@@ -81,7 +81,7 @@ const Calidad = styled.div`
     justify-content: center;
     align-items: center;
     @media only screen and (max-width: 1024px) {
-        padding: 8rem 0 ;
+        padding: 8rem 0 0rem 0 ;
     }
     .content{
         width: 55%;
