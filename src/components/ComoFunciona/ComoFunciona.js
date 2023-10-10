@@ -75,9 +75,17 @@ const ContenedorComoFunciona = styled.div`
         @media only screen and (max-width: 1024px) {
             width: 90%;
         }
+        @media only screen and (max-width: 920px){
+            flex-direction: column;
+            justify-content: center;
+        }
 
         .container-text{
             width: 40%;
+            @media only screen and (max-width: 920px){
+                width: 100%;
+                text-align: center;
+            }
             span{
                 color: #00b1ff;
                 text-transform: uppercase;
@@ -102,11 +110,23 @@ const ContenedorComoFunciona = styled.div`
             width: 50%;
             display: flex;
             flex-direction: column;
+            @media only screen and (max-width: 920px){
+                width: 100%;
+                text-align: center;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
             .paso2, .paso4{
                 margin-left: auto;
+                @media only screen and (max-width: 920px){
+                    margin: auto;
+                }
             }
             .paso2, .paso3, .paso4, .paso5{
                 margin-top: -2rem;
+                @media only screen and (max-width: 920px){
+                    margin-top: 0;
+                }
             }
             .pasos{
                 .cuadradoFondo{
@@ -119,6 +139,9 @@ const ContenedorComoFunciona = styled.div`
                     margin-top: -120px;
                     margin-left: -20px;
                     transform: rotate(340deg);
+                    @media only screen and (max-width: 920px){
+                        display: none;
+                    }
                 }
                 span{
                     position: relative;
