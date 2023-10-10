@@ -64,19 +64,7 @@ const Home = styled.div`
                     font-weight: bold;
                 }
             }
-            button{
-                padding: 10px 20px;
-                border-radius: 18px;
-                font-size: 1.2rem;
-                background: rgb(0,206,206);
-                border: none;
-                background: -moz-linear-gradient(90deg, rgba(0,206,206,1) 0%, rgba(0,177,255,1) 96%);
-                background: -webkit-linear-gradient(90deg, rgba(0,206,206,1) 0%, rgba(0,177,255,1) 96%);
-                background: linear-gradient(90deg, rgba(0,206,206,1) 0%, rgba(0,177,255,1) 96%);
-                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cece",endColorstr="#00b1ff",GradientType=1);
-                color: white;
-                font-weight: 600;
-            }
+
         }
 
         .container-img{

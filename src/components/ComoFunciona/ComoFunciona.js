@@ -63,7 +63,11 @@ const ContenedorComoFunciona = styled.div`
     width: 100%;
     background: white;
     padding: 8rem 0;
-    margin: 16rem 0;
+    margin: 16rem 0 0 0;
+    @media only screen and (max-width: 920px){
+        margin: 9rem 0 0 0;
+        padding: 5rem 0 2rem 0;
+    }
     .content{
         width: 55%;
         display: flex;
@@ -174,6 +178,10 @@ const Separador = styled.div`
     -ms-transform: skewY(5deg) translateY(100px);
     transform: skewY(5deg) translateY(100px);
     position: absolute;
+
+    @media only screen and (max-width: 920px){
+        height: 6rem;
+    }
 
 
 `
