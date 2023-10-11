@@ -279,9 +279,10 @@ const Header = styled.header`
 
         nav {
             position: fixed;
-            top: -140vh;
+            top: 0;
+            left: -100%!important;
             left: 0;
-            height: 100%;
+            height: 100vh;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -290,7 +291,7 @@ const Header = styled.header`
             gap: 1.5rem;
             background-color: white;
             position: fixed;
-            transition: 1s;
+            transition: .6s;
             ul{
                 flex-direction: column;
                 justify-content: center;
@@ -303,7 +304,7 @@ const Header = styled.header`
         }
 
         .responsive_nav {
-            transform: translateY(140vh);
+            transform: translateX(100%);
         }
 
         .nav-close-btn {

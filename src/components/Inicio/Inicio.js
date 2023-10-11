@@ -11,7 +11,7 @@ import Button from "../Button/Button";
 function Inicio() {
     return (
 
-        <Home>
+        <Home id="inicio">
 
             <div className="img-responsive"></div>
             <div className="content">

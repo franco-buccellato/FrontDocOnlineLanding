@@ -64,7 +64,6 @@ const FooterContainer = styled.div`
     padding: 8rem 0 2rem 0;
     background-color: #f9f9f9;
     @media only screen and (max-width: 920px){
-        margin: 9rem 0 0 0;
         padding: 5rem 0 2rem 0;
     }
     .content{

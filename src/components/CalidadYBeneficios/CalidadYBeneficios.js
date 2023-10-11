@@ -9,7 +9,7 @@ import imgCard03 from '../../imagenes/beneficios-card-3.png';
 function CalidadYBeneficios() {
     return (
 
-        <Calidad>
+        <Calidad id='beneficios'>
             <div className='fondoBlanco'></div>
             <div className='content'>
                 <div className='title-content'>

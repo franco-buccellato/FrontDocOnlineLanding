@@ -20,7 +20,7 @@ function FormularioLanding() {
     };
 
     return (
-        <FormularioContainer>
+        <FormularioContainer id='formulario'>
 
             <div className='content'>
                 <div className='title-form'>
@@ -40,7 +40,7 @@ function FormularioLanding() {
                         <Form.Control.Feedback type="invalid">
                             Por favor ingresa tu nombre.
                         </Form.Control.Feedback>
-                        <Form.Control.Feedback>Correcto.</Form.Control.Feedback>
+                        <Form.Control.Feedback>¡Correcto!</Form.Control.Feedback>
                     </Form.Group>
 
                     <Form.Group as={Col} md="4"   controlId="validationCustomUsername" className='containerInput'>
@@ -58,7 +58,7 @@ function FormularioLanding() {
                             <Form.Control.Feedback type="invalid">
                                 Por favor ingresa tu e-mail.
                             </Form.Control.Feedback>
-                            <Form.Control.Feedback>Correcto.</Form.Control.Feedback>
+                            <Form.Control.Feedback>¡Correcto!</Form.Control.Feedback>
                         </InputGroup>
                     </Form.Group>
 
@@ -94,6 +94,7 @@ const FormularioContainer = styled.div`
         }
         .formulario{
             width: 100%;
+
             @media only screen and (max-width: 1024px) {
                 flex-direction: column;
                 justify-content: center;
@@ -103,6 +104,7 @@ const FormularioContainer = styled.div`
                 }
                 .sc-beyTiQ {
                     width: 12rem !important;
+
                     margin: auto 0 auto auto;
                 }
             }
