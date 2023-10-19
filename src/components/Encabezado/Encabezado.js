@@ -1,9 +1,9 @@
-import GestorLogin from '../GestorLogin/GestorLogin';
+/* import GestorLogin from '../GestorLogin/GestorLogin'; */
 import { useContext, useState, useEffect, useRef } from 'react';
-import Modal from 'react-bootstrap/Modal';
-import UsuarioContext from '../Context/UsuarioContext';
+/* import UsuarioContext from '../Context/UsuarioContext'; */
 import logo from '../../imagenes/Logotipo.png';
 import styled from 'styled-components';
+
 
 function Encabezado() {
 
@@ -61,28 +61,28 @@ function Encabezado() {
     return (
         <Header scroll={scroll}>
             <div className='content'>
-
-                <div className='logo'>
-                    <div className='logo--container-img'>
-                        <img
-                            alt="logo-doconline"
-                            src={logo}
-                            width="100"
-                            className="d-inline-block align-center"
-                        />
+                {/* <a href="#inicio"> */}
+                    <div className='logo'>
+                        <div className='logo--container-img'>
+                            <img
+                                alt="logo-doconline"
+                                src={logo}
+                                width="100"
+                                className="d-inline-block align-center"
+                            />
+                        </div>
+                        <div className='logo--container-text'>
+                            <p>Doc.</p>
+                            <p>Online</p>
+                        </div>
                     </div>
-                    <div className='logo--container-text'>
-                        <p>Doc.</p>
-                        <p>Online</p>
-                    </div>
-                </div>
-
+                {/* </a> */}
                 <nav ref={navRef}>
                     <ul>
-                        <li><a href="/#">Nosotros</a></li>
-                        <li><a href="/#">Atención a Distancia</a></li>
-                        <li><a href="/#">Como Funciona</a></li>
-                        <li><a href="/#">Ingresar</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#atencion-distancia">Atención a Distancia</a></li>
+                        <li><a href="#como-funciona">Como Funciona</a></li>
+                        <li><a href="https://doconline-frontend.azurewebsites.net/login">Ingresar</a></li>
                     </ul>
 
 

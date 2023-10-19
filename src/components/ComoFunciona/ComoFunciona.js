@@ -7,7 +7,7 @@ function ComoFunciona() {
     return (
         <>
             <Separador />
-            <ContenedorComoFunciona id='funcionamiento'>
+            <ContenedorComoFunciona id='como-funciona'>
                 <div className='content'>
                     <div className='container-text'>
                         <span>agilidad utilizando la plataforma</span>
