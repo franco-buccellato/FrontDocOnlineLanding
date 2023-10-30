@@ -4,16 +4,21 @@ import Button from "../Button/Button";
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
+import { redirect } from 'react-router-dom';
 
 
 function FormularioLanding() {
     const [validated, setValidated] = useState(false);
 
     const handleSubmit = (event) => {
+        event.preventDefault();
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
+            
+        } else {
+            redirect('https://doconline-frontend.azurewebsites.net/login');
         }
 
         setValidated(true);

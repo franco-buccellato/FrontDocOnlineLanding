@@ -4,7 +4,7 @@ import imagenServicios from '../../imagenes/servicios-mujer.png';
 function Servicios() {
 
     return (
-        <ContenedorServicios id='servicios'>
+        <ContenedorServicios id='atencion-distancia'>
             <div className='content'>
 
                 <div className="container-img">
