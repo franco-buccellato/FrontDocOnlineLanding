@@ -2,58 +2,23 @@ import styled from 'styled-components';
 
 
 
-function ComoFunciona() {
+function Renovacion() {
 
     return (
         <>
-            <Separador />
-            <ContenedorComoFunciona id='como-funciona'>
+            <ContenedorComoFunciona id='renovacion'>
                 <div className='content'>
                     <div className='container-text'>
-                        <span>agilidad utilizando la plataforma</span>
-                        <h3>Como funciona</h3>
-                        <p>Conozca cómo funciona para acceder a las pautas de salud remotas y todos los beneficios que brinda el servicio online.</p>
-                        <br />
-                        <p>¡Sigue las etapas paso a paso y podrás usarlo de una manera práctica y sensilla!</p>
+                        <span>Renová tu permiso</span>
+                        <h3>Renovación</h3>
+                        <p>Te contamos como renovar tu permiso de cultivo y transporte!</p>
                     </div>
 
-                    <div className='container-pasos'>
-                        <div className='pasos paso1'>
-                            <span>1.</span>
-                            <p>Registrarse e iniciar sesión.<br />¡Es rápido y fácil!</p>
-                            <div className='cuadradoFondo'></div>
-                        </div>
-
-                        <div className='pasos paso2'>
-                            <span>2.</span>
-                            <p>Buscar un <br />médico específico</p>
-                            <div className='cuadradoFondo'></div>
-                        </div>
-
-                        <div className='pasos paso3'>
-                            <span>3.</span>
-                            <p>Seleccione fecha y <br /> hora para programar</p>
-                            <div className='cuadradoFondo'></div>
-                        </div>
-
-                        <div className='pasos paso4'>
-                            <span>4.</span>
-                            <p>Elige la forma <br /> de pago</p>
-                            <div className='cuadradoFondo'></div>
-                        </div>
-
-                        <div className='pasos paso5'>
-                            <span>5.</span>
-                            <p>¡Haz tu cita online <br /> sin salir de casa!</p>
-                            <div className='cuadradoFondo'></div>
-                        </div>
-
-                    </div>
                 </div>
 
 
                 <div className='container-video'>
-                    <iframe src="https://www.youtube.com/embed/2EpdYYa5oC8" frameborder="0" allow="fullscreen" allowfullscreen="" style={{ minHeight: 'auto', height: '100%', transform: 'none', width: '100%', borderRadius: '10px' }}></iframe>
+                    <iframe src="https://www.youtube.com/embed/RIz5DJ9l9ek" frameborder="0" allow="fullscreen" allowfullscreen="" style={{ minHeight: 'auto', height: '100%', transform: 'none', width: '100%', borderRadius: '10px' }}></iframe>
                 </div>
             </ContenedorComoFunciona>
 
@@ -62,15 +27,15 @@ function ComoFunciona() {
     );
 }
 
-export default ComoFunciona;
+export default Renovacion;
 
 const ContenedorComoFunciona = styled.div`
     width: 100%;
     background: white;
-    padding: 6rem 0;
-    margin: 16rem 0 0 0;
+    padding: 2rem 0;
+    margin: 0 0 0 0;
     @media only screen and (max-width: 920px){
-        margin: 9rem 0 0 0;
+        margin: 0rem 0 0 0;
         padding: 5rem 0 2rem 0;
     }
     .content{
@@ -90,7 +55,7 @@ const ContenedorComoFunciona = styled.div`
         }
 
         .container-text{
-            width: 40%;
+            width: 100%;
             @media only screen and (max-width: 920px){
                 width: 100%;
                 text-align: center;
@@ -106,7 +71,7 @@ const ContenedorComoFunciona = styled.div`
                 font-weight: 600;
                 font-size: 1.8rem;
                 margin-top: 3rem;
-                margin-bottom: 4rem;
+                margin-bottom: 2rem;
             }
             p{
 
@@ -172,7 +137,7 @@ const ContenedorComoFunciona = styled.div`
     .container-video{
         width: 55%;
         display: flex;
-        margin: 6rem auto 0rem auto;
+        margin: 5rem auto;
         height: 28rem;
         width: 55%;
         @media only screen and (max-width: 1540px) {
@@ -186,24 +151,4 @@ const ContenedorComoFunciona = styled.div`
             justify-content: center;
         }
         }
-`
-
-const Separador = styled.div`
-
-    width: 100%;
-    height: 14rem;
-    background: white;
-    margin-top: 0;
-    z-index: 1;
-    -webkit-transform: skewY(5deg) translateY(100px);
-    -moz-transform: skewY(5deg) translateY(100px);
-    -ms-transform: skewY(5deg) translateY(100px);
-    transform: skewY(5deg) translateY(100px);
-    position: absolute;
-
-    @media only screen and (max-width: 920px){
-        height: 6rem;
-    }
-
-
 `

@@ -8,6 +8,7 @@ import CuadradosFondo from '../CuadradosFondo/CuadradosFondo';
 import CalidadYBeneficios from '../CalidadYBeneficios/CalidadYBeneficios';
 import Servicios from '../Servicios/Servicios';
 import FormularioLanding from '../FormularioLanding/FormularioLanding';
+import Renovacion from '../Renovacion/Renovacion';
 
 
 const LandingPage = () => {
@@ -18,6 +19,7 @@ const LandingPage = () => {
             <CalidadYBeneficios />
             <Servicios/>
             <ComoFunciona/>
+            <Renovacion />
             <FormularioLanding/>
             <Footer/>
         </div>

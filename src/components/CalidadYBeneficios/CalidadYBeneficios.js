@@ -89,7 +89,7 @@ const Calidad = styled.div`
         z-index: 2;
         position: relative;
         @media only screen and (max-width: 1540px) {
-                width: 74%;
+            width: 74%;
         }
         @media only screen and (max-width: 1024px) {
             width: 90%;
@@ -241,16 +241,25 @@ const Calidad = styled.div`
         width: 80vw;
         background-color: white;
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         top: 100vh;
         right: auto;
         margin: auto;
         border-radius: 10%;
         transform: rotate(174deg);
         @media only screen and (max-width: 1540px) {
-            height: 225vh;
-            width: 84vw;
+            height: 146vh;
+            width: 88vw;
         }
+        @media only screen and (max-width: 1300px) {
+            height: 148vh;
+            width: 86vw;
+        }  
+        @media only screen and (max-width: 1100px) {
+            transform: rotate(180deg);
+            height: 142vh;
+            width: 90vw;
+        }    
         @media only screen and (max-width: 1024px) {
             display: none;
         }

@@ -43,7 +43,7 @@ const Home = styled.div`
     padding: 10vh 0;
     
     .content{
-        width: 55%;
+        width: 60%;
         height: 100%;
         margin: auto;
         display: flex;
@@ -175,31 +175,129 @@ const Home = styled.div`
 
     }
 
-    @media screen and (min-width: 1950px) and (max-width: 2220px) {
+    @media screen and (min-width: 1900px) and (max-width: 2220px) {
         .content{
             .container-img{
-                width: 42vw; 
+                width: 46vw; 
                 height: 96vh;
             }   
             
         }   
     }
 
-    
+    @media only screen and (max-width: 1870px) {
+        .content{
+            .container-img{
+                width: 42vw; 
+                height: 84vh;
+            }   
+            
+        }   
+    }
+
+    @media only screen and (max-width: 1770px) {
+        .content{
+            .container-img{
+                width: 42vw; 
+                height: 80vh;
+            }   
+            
+        }   
+    }
+
+    @media only screen and (max-width: 1690px) {
+        .content{
+            .container-img{
+                width: 42vw; 
+                height: 75vh;
+                top: -4vh;
+            }   
+            
+        }   
+    }
+
+    @media only screen and (max-width: 1570px) {
+        .content{
+            .container-img{
+                width: 42vw; 
+                height: 72vh;
+                top: -0vh;
+            }   
+            
+        }   
+    } 
 
     @media only screen and (max-width: 1540px) {
         height: calc(100vh - 12vh); //se resta el Encabezado
         .content{
             width: 74%;
-
-            .container-img{
-                width: 45vw; 
-                height: 94vh;
-            }   
             
         }    
 
     }
+
+    @media only screen and (max-width: 1500px) {
+        .content{
+            .container-img{
+                width: 42vw; 
+                height: 68vh;
+                top: 1vh;
+            }   
+            
+        }   
+    } 
+
+    @media only screen and (max-width: 1500px) {
+        .content{
+            .container-img{
+                width: 42vw; 
+                height: 68vh;
+                top: 1vh;
+            }   
+            
+        }   
+    } 
+
+    @media only screen and (max-width: 1400px) {
+        .content{
+            .container-img{
+                width: 42vw; 
+                height: 62vh;
+                top: 1vh;
+            }   
+            
+        }   
+    } 
+
+    @media only screen and (max-width: 1300px) {
+        .content{
+            .container-img{
+                width: 42vw; 
+                height: 56vh;
+                top: 2vh;
+            }   
+        }   
+    } 
+
+    @media only screen and (max-width: 1200px) {
+        .content{
+            .container-img{
+                width: 42vw; 
+                height: 52vh;
+                top: 12vh;
+            }   
+        }   
+    } 
+
+    @media only screen and (max-width: 1100px) {
+        .content{
+            .container-img{
+                width: 42vw; 
+                height: 48vh;
+                top: 12vh;
+            }   
+        }   
+    } 
 
     @media only screen and (max-width: 1024px){
 

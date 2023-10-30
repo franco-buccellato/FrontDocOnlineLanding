@@ -83,7 +83,7 @@ export default FormularioLanding;
 
 const FormularioContainer = styled.div`
     background-color: white;
-    padding: 4rem 0;
+    padding: 2rem 0 8rem 0;
     
     .content{
         background-color: #e8e8ed;

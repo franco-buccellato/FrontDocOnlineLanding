@@ -56,7 +56,7 @@ const ContenedorServicios = styled.div`
             height: 36rem; 
             left: -10rem;
             background-color: #ccc;
-            transform: rotate(340deg); 
+            transform: rotate(341.2deg); 
             transform-origin: center; 
             overflow: hidden; 
             position: absolute; 
@@ -65,9 +65,21 @@ const ContenedorServicios = styled.div`
             @media only screen and (max-width: 1024px) {
                 display: none;
             }
+            @media only screen and (max-width: 1670px) {
+                width: 52rem; 
+                height: 34rem; 
+            }
             @media only screen and (max-width: 1540px) {
                 width: 44rem; 
                 height: 34rem; 
+            }
+            @media only screen and (max-width: 1270px) {
+                width: 40rem; 
+                height: 30rem; 
+            }
+            @media only screen and (max-width: 1120px) {
+                width: 38rem; 
+                height: 28rem; 
             }
             div{
                 img{

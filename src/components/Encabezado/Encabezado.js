@@ -62,26 +62,27 @@ function Encabezado() {
         <Header scroll={scroll}>
             <div className='content'>
                 {/* <a href="#inicio"> */}
-                    <div className='logo'>
-                        <div className='logo--container-img'>
-                            <img
-                                alt="logo-doconline"
-                                src={logo}
-                                width="100"
-                                className="d-inline-block align-center"
-                            />
-                        </div>
-                        <div className='logo--container-text'>
-                            <p>Doc.</p>
-                            <p>Online</p>
-                        </div>
+                <div className='logo'>
+                    <div className='logo--container-img'>
+                        <img
+                            alt="logo-doconline"
+                            src={logo}
+                            width="100"
+                            className="d-inline-block align-center"
+                        />
                     </div>
+                    <div className='logo--container-text'>
+                        <p>Doc.</p>
+                        <p>Online</p>
+                    </div>
+                </div>
                 {/* </a> */}
                 <nav ref={navRef}>
                     <ul>
                         <li><a href="#nosotros">Nosotros</a></li>
                         <li><a href="#atencion-distancia">Atención a Distancia</a></li>
                         <li><a href="#como-funciona">Como Funciona</a></li>
+                        <li><a href="#renovacion">Renovación</a></li>
                         <li><a href="https://doconline-frontend.azurewebsites.net/login">Ingresar</a></li>
                     </ul>
 
@@ -169,7 +170,7 @@ const Header = styled.header`
     z-index: 1000;
 
     .content{
-        width: 55%;
+        width: 60%;
         margin: auto;
         display: flex;
     }
@@ -261,6 +262,29 @@ const Header = styled.header`
         height: 12vh;
         .content{
             width: 74%;
+        }
+    }
+
+    @media only screen and (max-width: 1240px) {
+        nav a {
+		    font-size: .9rem;
+        }
+
+        .logo{
+            gap: 12px;
+
+            .logo--container-img{
+                img{
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+
+            .logo--container-text{
+                p{
+                    font-size: 1.2rem;
+                }
+            }
         }
     }
 
