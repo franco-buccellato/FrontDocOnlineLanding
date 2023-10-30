@@ -7,48 +7,53 @@ function ComoFunciona() {
     return (
         <>
             <Separador />
-            <ContenedorComoFunciona id='funcionamiento'>
+            <ContenedorComoFunciona id='como-funciona'>
                 <div className='content'>
                     <div className='container-text'>
                         <span>agilidad utilizando la plataforma</span>
                         <h3>Como funciona</h3>
                         <p>Conozca cómo funciona para acceder a las pautas de salud remotas y todos los beneficios que brinda el servicio online.</p>
-<br />
+                        <br />
                         <p>¡Sigue las etapas paso a paso y podrás usarlo de una manera práctica y sensilla!</p>
                     </div>
 
                     <div className='container-pasos'>
                         <div className='pasos paso1'>
                             <span>1.</span>
-                            <p>Registrarse e iniciar sesión.<br/>¡Es rápido y fácil!</p>
+                            <p>Registrarse e iniciar sesión.<br />¡Es rápido y fácil!</p>
                             <div className='cuadradoFondo'></div>
                         </div>
 
                         <div className='pasos paso2'>
                             <span>2.</span>
-                            <p>Buscar un <br/>médico específico</p>
+                            <p>Buscar un <br />médico específico</p>
                             <div className='cuadradoFondo'></div>
                         </div>
 
                         <div className='pasos paso3'>
                             <span>3.</span>
-                            <p>Seleccione fecha y <br/> hora para programar</p>
+                            <p>Seleccione fecha y <br /> hora para programar</p>
                             <div className='cuadradoFondo'></div>
                         </div>
 
                         <div className='pasos paso4'>
                             <span>4.</span>
-                            <p>Elige la forma <br/> de pago</p>
+                            <p>Elige la forma <br /> de pago</p>
                             <div className='cuadradoFondo'></div>
                         </div>
 
                         <div className='pasos paso5'>
                             <span>5.</span>
-                            <p>¡Haz tu cita online <br/> sin salir de casa!</p>
+                            <p>¡Haz tu cita online <br /> sin salir de casa!</p>
                             <div className='cuadradoFondo'></div>
                         </div>
 
                     </div>
+                </div>
+
+
+                <div className='container-video'>
+                    <iframe src="https://www.youtube.com/embed/2EpdYYa5oC8" frameborder="0" allow="fullscreen" allowfullscreen="" style={{ minHeight: 'auto', height: '100%', transform: 'none', width: '100%', borderRadius: '10px' }}></iframe>
                 </div>
             </ContenedorComoFunciona>
 
@@ -164,6 +169,23 @@ const ContenedorComoFunciona = styled.div`
 
         }
     }
+    .container-video{
+        width: 55%;
+        display: flex;
+        margin: 5rem auto;
+        height: 28rem;
+        width: 55%;
+        @media only screen and (max-width: 1540px) {
+            width: 74%;
+        }
+        @media only screen and (max-width: 1024px) {
+            width: 90%;
+        }
+        @media only screen and (max-width: 920px){
+            flex-direction: column;
+            justify-content: center;
+        }
+        }
 `
 
 const Separador = styled.div`
