@@ -8,6 +8,7 @@ import Encabezado from './components/Encabezado/Encabezado';
 import CostosServicios from './components/CostosServicios/CostosServicios';
 import { useState } from 'react';
 import MetodosDePago from './components/MetodosDePago/MetodosDePago';
+import BotonWhatsApp from './components/BotonWhatsApp/BotonWhatsApp';
 /* import SectionSesion from './components/SectionSesion/SectionSesion';
 import PacienteContainer from './components/PacienteContainer/PacienteContainer'; */
 
@@ -19,6 +20,7 @@ function App() {
   return (
     <UsuarioContextProvider>
       <BrowserRouter>
+        <BotonWhatsApp />
         {mostrarEncabezado && <Encabezado />}
         {<Routes>
           <Route exact path='/' element={<LandingPage />} />
