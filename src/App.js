@@ -26,11 +26,6 @@ function App() {
           <Route exact path='/' element={<LandingPage />} />
           <Route exact path='/costosServicios' element={<CostosServicios setMostrarEncabezado={setMostrarEncabezado}/>} />
           <Route exact path='/metodosDePago' element={<MetodosDePago setMostrarEncabezado={setMostrarEncabezado}/>} />
-
-
-          {/* <Route exact path = '/login' element = {<Login/>}/>
-            <Route exact path = '/sesion' element = {<SectionSesion/>}/>
-            <Route exact path = '/paciente/' element = {<PacienteContainer/>}/> */}
         </Routes>}
       </BrowserRouter>
     </UsuarioContextProvider>

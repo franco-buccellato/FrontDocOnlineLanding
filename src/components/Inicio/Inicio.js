@@ -18,7 +18,7 @@ function Inicio() {
                 <div className="container-presentacion">
                     <h2>Tramita tu permiso de REPROCANN, sin moverte de tu casa.</h2>
                     <p><span>Doc.</span> Online conecta pacientes y médicos de forma práctica a través de un click desde donde estés, siempre priorizando tu salud!</p>
-                    <Button text={"Comenzar ahora"}/>
+                    <Button ruta={'/costosServicios'} text={"Comenzar ahora"}/>
                 </div>
 
                 <div className="container-img">
