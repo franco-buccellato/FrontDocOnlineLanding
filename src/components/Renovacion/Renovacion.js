@@ -18,7 +18,7 @@ function Renovacion() {
 
 
                 <div className='container-video'>
-                    <iframe src="https://www.youtube.com/embed/RIz5DJ9l9ek" frameborder="0" allow="fullscreen" allowfullscreen="" style={{ minHeight: 'auto', height: '100%', transform: 'none', width: '100%', borderRadius: '10px' }}></iframe>
+                    <iframe src="https://www.youtube.com/embed/RIz5DJ9l9ek" allow="fullscreen" allowFullScreen="" style={{ minHeight: 'auto', height: '100%', transform: 'none', width: '100%', borderRadius: '10px' }}></iframe>
                 </div>
             </ContenedorComoFunciona>
 
