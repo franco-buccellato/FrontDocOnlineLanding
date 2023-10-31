@@ -23,7 +23,7 @@ function App() {
         <BotonWhatsApp />
         {mostrarEncabezado && <Encabezado />}
         {<Routes>
-          <Route exact path='/' element={<LandingPage />} />
+          <Route exact path='/' element={<LandingPage setMostrarEncabezado={setMostrarEncabezado} />} />
           <Route exact path='/costosServicios' element={<CostosServicios setMostrarEncabezado={setMostrarEncabezado}/>} />
           <Route exact path='/metodosDePago' element={<MetodosDePago setMostrarEncabezado={setMostrarEncabezado}/>} />
         </Routes>}
