@@ -6,7 +6,6 @@ function Servicios() {
     return (
         <ContenedorServicios id='atencion-distancia'>
             <div className='content'>
-
                 <div className="container-img">
                     <div>
                         <img
@@ -14,9 +13,7 @@ function Servicios() {
                             src={imagenServicios}
                         />
                     </div>
-
                 </div>
-
                 <div className='container-text'>
                     <div className='title-content'>
                         <span>personal a tu disposición</span>
@@ -26,7 +23,6 @@ function Servicios() {
                             <br/>
                             <p>Doc. Online fue diseñado para conectar pacientes y médicos de una manera práctica.</p>
                         </div>
-
                     </div>
                 </div>
             </div>
