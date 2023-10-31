@@ -10,7 +10,7 @@ import Renovacion from '../Renovacion/Renovacion';
 import { useEffect } from 'react';
 
 
-const LandingPage = (setMostrarEncabezado) => {
+const LandingPage = ({setMostrarEncabezado}) => {
 
     useEffect(() => {
         setMostrarEncabezado(true)
