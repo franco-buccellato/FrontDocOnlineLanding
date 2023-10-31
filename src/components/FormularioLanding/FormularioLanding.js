@@ -20,21 +20,17 @@ function FormularioLanding() {
         } else {
             redirect('https://doconline-frontend.azurewebsites.net/login');
         }
-
         setValidated(true);
     };
 
     return (
         <FormularioContainer id='formulario'>
-
             <div className='content'>
                 <div className='title-form'>
                     <h3>¡Registrate ahora y cuida tu salud!</h3>
                     <p>Fácil, seguro y sin moverte de tu casa.</p>
                 </div>
-
                 <Form noValidate validated={validated} onSubmit={handleSubmit} className='d-flex justify-content-between formulario'>
-
                     <Form.Group as={Col} md="4" controlId="validationCustom01" className='containerInput'>
                         <Form.Control
                             required
@@ -47,9 +43,7 @@ function FormularioLanding() {
                         </Form.Control.Feedback>
                         <Form.Control.Feedback>¡Correcto!</Form.Control.Feedback>
                     </Form.Group>
-
                     <Form.Group as={Col} md="4"   controlId="validationCustomUsername" className='containerInput'>
-
                         <InputGroup hasValidation   className='rounded-right'>
                             <InputGroup.Text id="inputGroupPrepend" className='p-3 '>@</InputGroup.Text>
                             <Form.Control
@@ -58,7 +52,6 @@ function FormularioLanding() {
                                 aria-describedby="inputGroupPrepend"
                                 required
                                 className='inputMail'
-                                
                             />
                             <Form.Control.Feedback type="invalid">
                                 Por favor ingresa tu e-mail.
@@ -66,17 +59,12 @@ function FormularioLanding() {
                             <Form.Control.Feedback>¡Correcto!</Form.Control.Feedback>
                         </InputGroup>
                     </Form.Group>
-
-
                     <Button type="submit" text={"Registrarse"} className="butonRegistro"></Button >
                 </Form>
             </div>
-
         </FormularioContainer>
-
     );
 }
-
 
 export default FormularioLanding;
 

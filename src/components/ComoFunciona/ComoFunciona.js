@@ -16,49 +16,39 @@ function ComoFunciona() {
                         <br />
                         <p>¡Sigue las etapas paso a paso y podrás usarlo de una manera práctica y sensilla!</p>
                     </div>
-
                     <div className='container-pasos'>
                         <div className='pasos paso1'>
                             <span>1.</span>
                             <p>Registrarse e iniciar sesión.<br />¡Es rápido y fácil!</p>
                             <div className='cuadradoFondo'></div>
                         </div>
-
                         <div className='pasos paso2'>
                             <span>2.</span>
                             <p>Buscar un <br />médico específico</p>
                             <div className='cuadradoFondo'></div>
                         </div>
-
                         <div className='pasos paso3'>
                             <span>3.</span>
                             <p>Seleccione fecha y <br /> hora para programar</p>
                             <div className='cuadradoFondo'></div>
                         </div>
-
                         <div className='pasos paso4'>
                             <span>4.</span>
                             <p>Elige la forma <br /> de pago</p>
                             <div className='cuadradoFondo'></div>
                         </div>
-
                         <div className='pasos paso5'>
                             <span>5.</span>
                             <p>¡Haz tu cita online <br /> sin salir de casa!</p>
                             <div className='cuadradoFondo'></div>
                         </div>
-
                     </div>
                 </div>
-
-
                 <div className='container-video'>
                     <iframe src="https://www.youtube.com/embed/2EpdYYa5oC8" frameborder="0" allow="fullscreen" allowfullscreen="" style={{ minHeight: 'auto', height: '100%', transform: 'none', width: '100%', borderRadius: '10px' }}></iframe>
                 </div>
             </ContenedorComoFunciona>
-
         </>
-
     );
 }
 
@@ -204,6 +194,4 @@ const Separador = styled.div`
     @media only screen and (max-width: 920px){
         height: 6rem;
     }
-
-
 `

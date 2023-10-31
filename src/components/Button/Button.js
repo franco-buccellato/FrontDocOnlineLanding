@@ -60,5 +60,4 @@ const ButtonPrincipal = styled.button`
     &:active{
         transform: scale(0.95);
     }
-
 `

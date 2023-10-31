@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import logo from '../../imagenes/Logotipo.png';
 
-
 function Footer() {
     return (
         <FooterContainer>
@@ -18,7 +17,6 @@ function Footer() {
                                 />
                                 <p><span>DOC.</span>Online</p>
                             </div>
-
                             <p>Cuidando tu salud <br/> estés donde estés.</p>
                         </div>
                         <div className='container-segunda'>
@@ -31,7 +29,6 @@ function Footer() {
                             </ul>
                         </div>
                     </div>
-
                     <div className='terceraYCuertaColumna'>
                         <div className='container-tercera'>
                             <ul>
@@ -40,7 +37,6 @@ function Footer() {
                                 <li>Centro de ayuda</li>
                             </ul>
                         </div>
-
                         <div className='container-tercera'>
                             <ul>
                                 <li className='titulo'>Trabajá con nosotros</li>
@@ -48,9 +44,7 @@ function Footer() {
                             </ul>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </FooterContainer>
     );

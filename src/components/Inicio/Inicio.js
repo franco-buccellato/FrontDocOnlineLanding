@@ -1,18 +1,12 @@
 import "./Inicio.css";
-import Carousel from "react-bootstrap/Carousel";
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import imagenTarjetas from '../../imagenes/inicio-tarjetas.png';
 import imagenTarjetasResponsive from '../../imagenes/inicio-tarjetas-responsive.png';
 import Button from "../Button/Button";
 
-
-
 function Inicio() {
     return (
-
         <Home id="inicio">
-
             <div className="img-responsive"></div>
             <div className="content">
                 <div className="container-presentacion">
@@ -20,7 +14,6 @@ function Inicio() {
                     <p><span>Doc.</span> Online conecta pacientes y médicos de forma práctica a través de un click desde donde estés, siempre priorizando tu salud!</p>
                     <Button ruta={'/costosServicios'} text={"Comenzar ahora"}/>
                 </div>
-
                 <div className="container-img">
                         <img
                             alt="logo-doconline"
@@ -28,10 +21,7 @@ function Inicio() {
                         />
                 </div>
             </div>
-
-
         </Home>
-
     );
 }
 

@@ -5,7 +5,6 @@ function CuadradosFondo() {
     return (
 
         //En total hay 11 cuadrados
-
         <>
             <Cuadrado1></Cuadrado1>
             <Cuadrado2></Cuadrado2>
@@ -30,8 +29,6 @@ function CuadradosFondo() {
 }
 
 export default CuadradosFondo;
-
-
 
 const Cuadrado1 = styled.span`
 

@@ -1,16 +1,10 @@
-/* import GestorLogin from '../GestorLogin/GestorLogin'; */
-import { useContext, useState, useEffect, useRef } from 'react';
-/* import UsuarioContext from '../Context/UsuarioContext'; */
+import { useState, useEffect, useRef } from 'react';
 import logo from '../../imagenes/Logotipo.png';
 import styled from 'styled-components';
 
-
 function Encabezado() {
-
-
     // SE AGREGA EL FONDO DIFUMINADO
     const [scroll, setScroll] = useState(false);
-
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 50) {
@@ -19,9 +13,7 @@ function Encabezado() {
                 setScroll(false);
             }
         };
-
         window.addEventListener('scroll', handleScroll);
-
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -35,23 +27,6 @@ function Encabezado() {
             "responsive_nav"
         );
     };
-
-
-
-
-
-
-
-    /* 
-    const { esAdministrador } = useContext(UsuarioContext);
-
-        const [show, setShow] = useState(false);
-        const handleClose = () => setShow(false);
-        const handleShow = () => setShow(true);
-    
-        const [showListaDePrecios, setShowListaDePrecios] = useState(false);
-        const handleCloseListaDePrecios = () => setShowListaDePrecios(false);
-        const handleShowListaDePrecios = () => setShowListaDePrecios(true); */
 
     /* MODAL Fallida*/
     const [showFallida, setShowFallida] = useState(false);
@@ -85,10 +60,6 @@ function Encabezado() {
                         <li><a href="#renovacion">Renovación</a></li>
                         <li><a href="https://doconline-frontend.azurewebsites.net/login">Ingresar</a></li>
                     </ul>
-
-
-
-
                     <button
                         className="nav-btn nav-close-btn"
                         onClick={showNavbar}>
@@ -100,57 +71,8 @@ function Encabezado() {
                     onClick={showNavbar}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /></svg>
                 </button>
-
             </div>
-
         </Header>
-
-        /* <Container>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <LinkContainer to={'/'}>
-                    <Navbar.Brand>
-                        <img
-                            alt="logo-doconline"
-                            src={logo}
-                            width="100"
-                            className="d-inline-block align-center"
-                        />{' '}
-                    </Navbar.Brand>
-                </LinkContainer>
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        {/* <LinkContainer to = '/'><Nav.Link>Inicio</Nav.Link></LinkContainer> */
-        /* <LinkContainer to='/'><Nav.Link>Inicio</Nav.Link></LinkContainer>
-                        <Nav.Link href='#nosotros'>Nosotros</Nav.Link>
-                        <Nav.Link href='#como-funciona'>¿Como Funciona?</Nav.Link> */
-        /*                         <LinkContainer to = '/procedimientos'><Nav.Link>Procedimientos</Nav.Link></LinkContainer>
-            <LinkContainer to = '/legal'><Nav.Link>Asesoramiento Legal</Nav.Link></LinkContainer>
-            <LinkContainer to = '/aceites'><Nav.Link>Elaboración Aceites</Nav.Link></LinkContainer>
-            <LinkContainer to = '/preguntas'><Nav.Link>Preguntas Frecuentes</Nav.Link></LinkContainer> */
-        /* {
-                            (esAdministrador()) &&
-                            <LinkContainer to='/configuracion'><Nav.Link>Configuracion</Nav.Link></LinkContainer>
-                        }
-                    </Nav> */
-        /* <Nav>
-                            <LinkContainer to='/login'><Nav.Link><GestorLogin /></Nav.Link></LinkContainer>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container> */
-
-        /* <Modal show={showFallida} onHide={handleCloseFallida}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Operación fallida!</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>La operación falló, vuelva a intentarlo.</Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleCloseFallida}>
-                        Close
-                    </Button>
-                </Modal.Footer>
-            </Modal> */
-
-
     );
 }
 
