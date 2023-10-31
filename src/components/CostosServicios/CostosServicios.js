@@ -3,8 +3,6 @@ import { useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-
-
 export default function CostosServicios({ setMostrarEncabezado }) {
 
     useEffect(() => {
@@ -12,8 +10,6 @@ export default function CostosServicios({ setMostrarEncabezado }) {
     })
 
     return (
-
-
         <ContainerCostos>
             <div className='fondo'></div>
             <Link to = '/'>
@@ -32,6 +28,7 @@ export default function CostosServicios({ setMostrarEncabezado }) {
                 <div className='tiempo-oferta'>
                         <span>Oferta válida hasta el 02/11/23</span>
                 </div> */}
+
 
                 {/* TARJETA SERVICIO */}
                 <div className='container-cards'>
@@ -78,6 +75,8 @@ export default function CostosServicios({ setMostrarEncabezado }) {
                             </Link>
                         </footer>
                     </div>
+
+
                     {/* TARJETA SERVICIO */}
                     <div className='card '>
                         <header>
@@ -135,8 +134,6 @@ export default function CostosServicios({ setMostrarEncabezado }) {
         </ContainerCostos>
     )
 }
-
-
 
 const ContainerCostos = styled.div`
     width: 100%;
