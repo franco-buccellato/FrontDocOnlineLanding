@@ -77,7 +77,7 @@ const FormularioContainer = styled.div`
         background-color: #e8e8ed;
         border-radius: 14px;
         width:85%;
-        padding: 3rem 15%;
+        padding: 3rem 13%;
         margin: auto;
         @media only screen and (max-width: 1540px) {
             padding: 3rem 5%;

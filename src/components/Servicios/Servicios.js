@@ -36,7 +36,7 @@ export default Servicios;
 const ContenedorServicios = styled.div`
     width: 100%;
     .content{
-        width: 55%;
+        width: 60%;
         margin: auto;
         display: flex;
         @media only screen and (max-width: 1540px) {

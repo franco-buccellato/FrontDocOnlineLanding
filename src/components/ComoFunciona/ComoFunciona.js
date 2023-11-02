@@ -64,7 +64,7 @@ const ContenedorComoFunciona = styled.div`
         padding: 5rem 0 2rem 0;
     }
     .content{
-        width: 55%;
+        width: 60%;
         display: flex;
         margin: 0 auto;
         gap: 10%;
@@ -160,11 +160,10 @@ const ContenedorComoFunciona = styled.div`
         }
     }
     .container-video{
-        width: 55%;
+        width: 60%;
         display: flex;
         margin: 6rem auto 0rem auto;
-        height: 28rem;
-        width: 55%;
+        height: 30rem;
         @media only screen and (max-width: 1540px) {
             width: 74%;
         }

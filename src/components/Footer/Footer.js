@@ -61,7 +61,7 @@ const FooterContainer = styled.div`
         padding: 5rem 0 2rem 0;
     }
     .content{
-        width: 55%;
+        width: 60%;
         display: flex;
         margin: 0 auto;
         gap: 10%;

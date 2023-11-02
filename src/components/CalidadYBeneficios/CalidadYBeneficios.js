@@ -75,7 +75,7 @@ const Calidad = styled.div`
         padding: 8rem 0 0rem 0 ;
     }
     .content{
-        width: 55%;
+        width: 60%;
         margin: auto;
         z-index: 2;
         position: relative;

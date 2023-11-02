@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+import logo from '../../imagenes/Logotipo.png';
 
 export default function MetodosDePago({ setMostrarEncabezado }) {
 
@@ -53,80 +54,106 @@ export default function MetodosDePago({ setMostrarEncabezado }) {
     };
 
     return (
-        <ContainerMetodosDePago>
-            <div className='content'>
-                <div className='container-text'>
-                    <h2>Métodos de pago</h2>
-                    <p>Transferí al siguiente Alias/CBU y envíanos el comprobante de pago. Se aceptan transferencias bancarias, Mercadopago, Brubank o cualquier otro medio. También por Rapipago o Pago fácil, pedinos por WhatsApp el numero de pago.</p>
-                    <div className='container-img'>
-                        <img src="https://www.generatorlanding.com/landing/library/4942/01cbde2.png" style={{ width: "55%", margin: "auto", borderRadius: "null", border: "nullpx solid null" }} alt="" />
-                    </div>
+        <>
+            <Encabezado>
+                <Link to='/costosServicios'>
+                    <button className='button-volver'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" /></svg>
+                        Volver
+                    </button>
+                </Link>
+                <div>
+                    <img
+                        alt="logo-doconline"
+                        src={logo}
+                        width="100"
+                        className="d-inline-block align-center"
+                    />
                 </div>
-                <div className='container-datos'>
-                    <div className='container-alias'>
-                        <div className='dato'>
-                            <div className='dato-texto'>
-                                <p className='text'>Alias: </p>
-                                <span>{textoAlias}</span>
-                            </div>
-                            <div className='dato-button'>
-                                <button onClick={copiarTextoAlias} disabled={copiadoAlias}>
-                                    {copiadoAlias ?
-                                        (<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#09c6cf" class="bi bi-clipboard-check" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" /><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" /><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" /></svg>)
-                                        :
-                                        (<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#09c6cf" class="bi bi-clipboard" viewBox="0 0 16 16"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" /><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" /></svg>)}
-                                </button>
-                            </div>
+            </Encabezado>
+            <ContainerMetodosDePago>
+                <div className='content'>
+                    <div className='container-text'>
+                        <div>
+                            <h2>Métodos de pago</h2>
+                            <p>Transferí al siguiente Alias/CBU y envíanos el comprobante de pago. Se aceptan transferencias bancarias, Mercadopago, Brubank o cualquier otro medio. También por Rapipago o Pago fácil, pedinos por WhatsApp el numero de pago.</p>
                         </div>
-                        <div className='dato'>
-                            <div className='dato-texto'>
-                                <p className='text'>CBU: </p>
-                                <span>{textoCbu}</span>
-                            </div>
-                            <div className='dato-button'>
-                                <button onClick={copiarTextoCbu} disabled={copiadoCbu}>
-                                    {copiadoCbu ?
-                                        (<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#09c6cf" class="bi bi-clipboard-check" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" /><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" /><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" /></svg>)
-                                        :
-                                        (<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#09c6cf" class="bi bi-clipboard" viewBox="0 0 16 16"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" /><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" /></svg>)}
-                                </button>
-                            </div>
+
+                        <div className='container-img'>
+                            <img src="https://www.generatorlanding.com/landing/library/4942/01cbde2.png" style={{ width: "55%", margin: "auto", borderRadius: "null", border: "nullpx solid null" }} alt="" />
                         </div>
                     </div>
-                    <div className='container-frase'>
-                        <p>Fácil, seguro y</p>
-                        <p>sin moverte de tu casa.</p>
-                    </div>
-                    <div className='container-buttons'>
-                        <ButtonContinuar>
-                            <a href='https://api.whatsapp.com/send?phone=543425319488&text=Hola+vi+la+pagina+del+servicio%2C+mi+nombre+es%3A' target='__blank'>
-                                <span>Enviar comprobante de pago</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" /></svg>
-                            </a>
-                        </ButtonContinuar>
-                        <ButtonContinuar>
-                            <Link to = '/pasosFinales'>
-                                <span>Continuar tramite</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" /></svg>
-                            </Link>
-                        </ButtonContinuar>
+                    <div className='container-datos'>
+                        <div className='container-alias'>
+                            <div className='dato'>
+                                <div className='dato-texto'>
+                                    <p className='text'>Alias: </p>
+                                    <span>{textoAlias}</span>
+                                </div>
+                                <div className='dato-button'>
+                                    <button onClick={copiarTextoAlias} disabled={copiadoAlias}>
+                                        {copiadoAlias ?
+                                            (<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#09c6cf" class="bi bi-clipboard-check" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" /><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" /><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" /></svg>)
+                                            :
+                                            (<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#09c6cf" class="bi bi-clipboard" viewBox="0 0 16 16"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" /><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" /></svg>)}
+                                    </button>
+                                </div>
+                            </div>
+                            <div className='dato'>
+                                <div className='dato-texto'>
+                                    <p className='text'>CBU: </p>
+                                    <span>{textoCbu}</span>
+                                </div>
+                                <div className='dato-button'>
+                                    <button onClick={copiarTextoCbu} disabled={copiadoCbu}>
+                                        {copiadoCbu ?
+                                            (<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#09c6cf" class="bi bi-clipboard-check" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" /><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" /><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" /></svg>)
+                                            :
+                                            (<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#09c6cf" class="bi bi-clipboard" viewBox="0 0 16 16"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" /><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" /></svg>)}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='container-frase'>
+                            <p>Fácil, seguro y</p>
+                            <p>sin moverte de tu casa.</p>
+                        </div>
+                        <div className='container-buttons'>
+                            <ButtonContinuar>
+                                <a href='https://api.whatsapp.com/send?phone=543425319488&text=Hola+vi+la+pagina+del+servicio%2C+mi+nombre+es%3A' target='__blank'>
+                                    <span>Enviar comprobante de pago</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" /></svg>
+                                </a>
+                            </ButtonContinuar>
+                            <ButtonContinuar>
+                                <Link to='/pasosFinales'>
+                                    <span>Continuar tramite</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" /></svg>
+                                </Link>
+                            </ButtonContinuar>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </ContainerMetodosDePago>
+            </ContainerMetodosDePago>
+        </>
+
     )
 }
 
 
 const ContainerMetodosDePago = styled.div`
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .content{
-        width: 55%;
+        width: 70%;
         height: 100%;
         display: flex;
         flex-direction: row;
-        margin: 3rem auto 2rem auto;
+        align-items: center;
+        justify-content: center;
         gap: 10%;
         @media only screen and (max-width: 1540px) {
             width: 74%;
@@ -141,19 +168,32 @@ const ContainerMetodosDePago = styled.div`
 
         .container-text{
             width: 50%;
-            h2{
-                font-size: 2rem;
-                margin-bottom: 2rem;
+            background-color: white;
+            border-radius: 12px;
+            height: 80%;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            div{
+                height: 50%;
+                h2{
+                    font-size: 2rem;
+                    margin-bottom: 2rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                    line-height: 1.7;
+                    
+                }
             }
-            p{
-                font-size: 1.2rem;
-                line-height: 1.7;
-                
-            }
+
             .container-img{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                height: 50%;
             }
         }
 
@@ -260,3 +300,41 @@ const ButtonContinuar = styled.div`
         transform: scale(0.95);
     }
 `
+
+
+const Encabezado = styled.div`
+    position: absolute;
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    top: 10px; 
+    padding: 1rem 2rem ;
+    @media only screen and (max-width: 1120px){
+        padding: 0rem 1rem ;
+    }
+
+    .button-volver{
+        svg{
+            margin-right: 6px;
+            margin-bottom: 3px;
+        }
+        left: 20px;
+        top: 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 6px 10px;
+        background:#09c6cf ;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: .8rem;
+        color: white;
+    }
+    div{
+        img{
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+`    
