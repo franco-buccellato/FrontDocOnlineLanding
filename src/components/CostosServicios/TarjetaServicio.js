@@ -125,7 +125,7 @@ const TarjetaServicioContainer = styled.div`
             width: 90%;
         }
         button{
-            background:#09c6cf ;
+            background: #00b1ff;
             width: 100%;
             padding: 10px 0;
             border: none;

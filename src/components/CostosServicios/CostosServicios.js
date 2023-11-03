@@ -16,7 +16,7 @@ export default function CostosServicios({ setMostrarEncabezado }) {
         <>
             <FondoBlaco>
                 <svg  viewBox="0 0 1440 320">
-                    <path fill="#00cece" fill-opacity="1" d="M0,64L60,90.7C120,117,240,171,360,165.3C480,160,600,96,720,101.3C840,107,960,181,1080,197.3C1200,213,1320,171,1380,149.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+                    <path fill="#00b1ff" fill-opacity="1" d="M0,64L60,90.7C120,117,240,171,360,165.3C480,160,600,96,720,101.3C840,107,960,181,1080,197.3C1200,213,1320,171,1380,149.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
                 </svg>
             </FondoBlaco>
             <Encabezado>
@@ -88,15 +88,21 @@ const ContainerCostos = styled.div`
         }
 
         .title{
+            z-index: 2;
             width: 60%;
             margin: auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
+
             align-items: center;
             height: 20vh;
             margin-top: 2vh;
-            margin-bottom: 4rem     ;
+            margin-bottom: 4rem;
+            @media only screen and (max-width:1020px){
+                margin-top: 3rem;
+                   
+            }
             @media only screen and (max-width: 920px){
                     width: 90%;
             }
@@ -104,10 +110,14 @@ const ContainerCostos = styled.div`
                 font-size: 1.6rem;
                 font-weight: 600; 
                 text-align: center;
-                color: #0c0c0c;
+                color: white;
+                @media only screen and (max-width:1020px){
+                   color: #595959;
+                   
+                }
             }
             p{
-                color: #707070;
+                color: white;
                 font-weight: 600;   
                 font-size: 1.2rem;
                 width: 90%;
@@ -115,6 +125,9 @@ const ContainerCostos = styled.div`
                 margin: 1rem auto 0 auto;
                 @media only screen and (max-width: 920px){
                     width: 100%;
+                }
+                @media only screen and (max-width:1020px){
+                   color: #595959;
                 }
             }
 
@@ -155,7 +168,8 @@ const ContainerCostos = styled.div`
 `
 
 const FondoBlaco = styled.div`
-    background-color: #00cece;
+    z-index: 1;
+    background-color: #00b1ff;
     opacity: 0.8;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
     width: 100%;
@@ -173,6 +187,7 @@ const FondoBlaco = styled.div`
 
 const Encabezado = styled.div`
     position: absolute;
+    z-index: 2;
     width: 99%;
     display: flex;
     justify-content: space-between;
@@ -198,7 +213,7 @@ const Encabezado = styled.div`
         text-transform: uppercase;
         font-weight: 600;
         font-size: .8rem;
-        color: #00cece;
+        color: #00b1ff;
     }
     div{
         background-color: white;
