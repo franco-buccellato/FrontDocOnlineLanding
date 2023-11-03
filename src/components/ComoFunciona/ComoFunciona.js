@@ -45,7 +45,7 @@ function ComoFunciona() {
                     </div>
                 </div>
                 <div className='container-video'>
-                    <iframe src="https://www.youtube.com/embed/2EpdYYa5oC8" frameborder="0" allow="fullscreen" allowfullscreen="" style={{ minHeight: 'auto', height: '100%', transform: 'none', width: '100%', borderRadius: '10px' }}></iframe>
+                    <iframe src="https://www.youtube.com/embed/2EpdYYa5oC8" allow="fullscreen" allowFullScreen="" style={{ minHeight: 'auto', height: '100%', transform: 'none', width: '100%', borderRadius: '10px' }}></iframe>
                 </div>
             </ContenedorComoFunciona>
         </>

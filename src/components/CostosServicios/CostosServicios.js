@@ -210,11 +210,3 @@ const Encabezado = styled.div`
         }
     }
 `
-
-
-
-
-
-
-
-
