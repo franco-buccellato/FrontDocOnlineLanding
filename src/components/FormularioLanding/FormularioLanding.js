@@ -25,6 +25,7 @@ function FormularioLanding() {
 
     return (
         <FormularioContainer id='formulario'>
+            <svg viewBox="0 0 1440 320"><path fill="#e8e8ed" fill-opacity="1" d="M0,192L120,197.3C240,203,480,213,720,202.7C960,192,1200,160,1320,144L1440,128L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
             <div className='content'>
                 <div className='title-form'>
                     <h3>¡Registrate ahora y cuida tu salud!</h3>
@@ -62,6 +63,7 @@ function FormularioLanding() {
                     <Button type="submit" text={"Registrarse"} className="butonRegistro"></Button >
                 </Form>
             </div>
+            <svg viewBox="0 0 1440 320"><path fill="#f9f9f9" fill-opacity="1" d="M0,96L120,106.7C240,117,480,139,720,133.3C960,128,1200,96,1320,80L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
         </FormularioContainer>
     );
 }
@@ -71,7 +73,7 @@ export default FormularioLanding;
 
 const FormularioContainer = styled.div`
     background-color: white;
-    padding: 2rem 0 8rem 0;
+    padding: 0rem 0 0rem 0;
     
     .content{
         background-color: #e8e8ed;

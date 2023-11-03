@@ -14,7 +14,11 @@ export default function CostosServicios({ setMostrarEncabezado }) {
 
     return (
         <>
-            <FondoBlaco />
+            <FondoBlaco>
+                <svg  viewBox="0 0 1440 320">
+                    <path fill="#00cece" fill-opacity="1" d="M0,64L60,90.7C120,117,240,171,360,165.3C480,160,600,96,720,101.3C840,107,960,181,1080,197.3C1200,213,1320,171,1380,149.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+                </svg>
+            </FondoBlaco>
             <Encabezado>
                 <Link to='/'>
                     <button className='button-volver'>
@@ -151,11 +155,17 @@ const ContainerCostos = styled.div`
 `
 
 const FondoBlaco = styled.div`
-    background-color: white;
+    background-color: #00cece;
+    opacity: 0.8;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     position: absolute;
-    bottom: 0;
+    top: 0;
+    svg{
+        position: absolute;
+        top: 30vh;
+    }
     @media only screen and (max-width: 1120px){
         display: none;
     }
@@ -184,16 +194,27 @@ const Encabezado = styled.div`
         border: 1px solid white;
         border-radius: 10px;
         padding: 6px 10px;
-        background:#09c6cf ;
+        background: white ;
         text-transform: uppercase;
         font-weight: 600;
         font-size: .8rem;
-        color: white;
+        color: #00cece;
     }
     div{
+        background-color: white;
+        padding: 0.8rem;
+        border-radius: 50%;
         img{
             width: 3rem;
             height: 3rem;
         }
     }
 `
+
+
+
+
+
+
+
+

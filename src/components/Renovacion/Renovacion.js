@@ -20,6 +20,7 @@ function Renovacion() {
                 <div className='container-video'>
                     <iframe src="https://www.youtube.com/embed/RIz5DJ9l9ek" frameborder="0" allow="fullscreen" allowfullscreen="" style={{ minHeight: 'auto', height: '100%', transform: 'none', width: '100%', borderRadius: '10px' }}></iframe>
                 </div>
+                <svg  viewBox="0 0 1440 320"><path fill="#e8e8ed" fill-opacity="1" d="M0,224L120,208C240,192,480,160,720,149.3C960,139,1200,149,1320,154.7L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
             </ContenedorComoFunciona>
 
         </>
@@ -32,11 +33,11 @@ export default Renovacion;
 const ContenedorComoFunciona = styled.div`
     width: 100%;
     background: white;
-    padding: 2rem 0;
+    padding: 2rem 0 0 0;
     margin: 0 0 0 0;
     @media only screen and (max-width: 920px){
         margin: 0rem 0 0 0;
-        padding: 5rem 0 2rem 0;
+        padding: 5rem 0 0rem 0;
     }
     .content{
         width: 60%;
@@ -56,8 +57,7 @@ const ContenedorComoFunciona = styled.div`
 
         .container-text{
             width: 100%;
-            @media only screen and (max-width: 920px){
-                width: 100%;
+            @media only screen and (max-width: 1024px){
                 text-align: center;
             }
             span{
@@ -65,7 +65,7 @@ const ContenedorComoFunciona = styled.div`
                 text-transform: uppercase;
                 font-size: 1.2rem;
                 font-weight: 600;
-                text-align: end;
+
             }
             h3{
                 font-weight: 600;
@@ -137,7 +137,7 @@ const ContenedorComoFunciona = styled.div`
     .container-video{
         width: 60%;
         display: flex;
-        margin: 5rem auto;
+        margin: 5rem auto 1rem auto;
         height: 30rem;
 
         @media only screen and (max-width: 1540px) {

@@ -8,6 +8,7 @@ import Servicios from '../Servicios/Servicios';
 import FormularioLanding from '../FormularioLanding/FormularioLanding';
 import Renovacion from '../Renovacion/Renovacion';
 import { useEffect } from 'react';
+import UsoPractico from '../UsoPractico/UsoPractico';
 
 
 const LandingPage = ({setMostrarEncabezado}) => {
@@ -24,6 +25,7 @@ const LandingPage = ({setMostrarEncabezado}) => {
             <Servicios/>
             <ComoFunciona/>
             <Renovacion />
+            <UsoPractico />
             <FormularioLanding/>
             <Footer/>
         </div>

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import logo from '../../imagenes/Logotipo.png';
+import imgCarta from '../../imagenes/doctorTarjeta.png';
 
 export default function MetodosDePago({ setMostrarEncabezado }) {
 
@@ -71,16 +72,22 @@ export default function MetodosDePago({ setMostrarEncabezado }) {
                     />
                 </div>
             </Encabezado>
+            {/* <ImgFondo>
+                <img 
+                    alt="logo-doconline"
+                    src={imgCarta}
+                />
+            </ImgFondo> */}
             <ContainerMetodosDePago>
                 <div className='content'>
                     <div className='container-text'>
-                        <div>
-                            <h2>Métodos de pago</h2>
-                            <p>Transferí al siguiente Alias/CBU y envíanos el comprobante de pago. Se aceptan transferencias bancarias, Mercadopago, Brubank o cualquier otro medio. También por Rapipago o Pago fácil, pedinos por WhatsApp el numero de pago.</p>
-                        </div>
 
                         <div className='container-img'>
                             <img src="https://www.generatorlanding.com/landing/library/4942/01cbde2.png" style={{ width: "55%", margin: "auto", borderRadius: "null", border: "nullpx solid null" }} alt="" />
+                        </div>
+                        <div>
+                            <h2>Métodos de pago</h2>
+                            <p>Transferí al siguiente Alias/CBU y envíanos el comprobante de pago. Se aceptan transferencias bancarias, Mercadopago, Brubank o cualquier otro medio. También por Rapipago o Pago fácil, pedinos por WhatsApp el numero de pago.</p>
                         </div>
                     </div>
                     <div className='container-datos'>
@@ -175,16 +182,19 @@ const ContainerMetodosDePago = styled.div`
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             div{
                 height: 50%;
                 h2{
                     font-size: 2rem;
                     margin-bottom: 2rem;
+                    text-align: center;
                 }
                 p{
                     font-size: 1.2rem;
                     line-height: 1.7;
+                    text-align: center;
                     
                 }
             }
@@ -338,3 +348,8 @@ const Encabezado = styled.div`
         }
     }
 `    
+
+const ImgFondo = styled.div`
+    position: absolute;
+    bottom: 0;
+`
