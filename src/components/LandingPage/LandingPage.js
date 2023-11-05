@@ -1,6 +1,5 @@
 import Footer from '../Footer/Footer';
 import Inicio from '../Inicio/Inicio';
-import './LandingPage.css';
 import ComoFunciona from '../ComoFunciona/ComoFunciona';
 import CuadradosFondo from '../CuadradosFondo/CuadradosFondo';
 import CalidadYBeneficios from '../CalidadYBeneficios/CalidadYBeneficios';
