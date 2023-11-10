@@ -1,4 +1,3 @@
-import "./Inicio.css";
 import styled from 'styled-components';
 import imagenTarjetas from '../../imagenes/inicio-tarjetas.png';
 import imagenTarjetasResponsive from '../../imagenes/inicio-tarjetas-responsive.png';
@@ -102,17 +101,17 @@ const Home = styled.div`
             width: 90%;
 
             @keyframes morph {
-        0% {
-            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-        }
+      0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+      }
 
-        50% {
-            border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-        }
+      50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+      }
 
-        100% {
-            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-        }
+      100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+      }
     }
         }
 

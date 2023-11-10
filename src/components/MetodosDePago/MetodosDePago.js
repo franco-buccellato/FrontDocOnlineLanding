@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import logo from '../../imagenes/Logotipo.png';
-import imgCarta from '../../imagenes/doctorTarjeta.png';
 
 export default function MetodosDePago({ setMostrarEncabezado }) {
 

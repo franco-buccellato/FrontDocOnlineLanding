@@ -1,0 +1,100 @@
+.container-paciente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 150px;
+    margin-bottom: 100px;
+}
+
+.paciente-informacion {
+    border: solid 2px var(--color-1);
+    border-radius: 20px;
+    background-color: var(--color-1-3);
+    padding: 5%;
+}
+
+.paciente-informacion h5 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.boton-modificar-info {
+    margin-top: 5%;
+}
+
+.boton-modificar-info ion-icon, .boton-desloguear ion-icon, .boton-paciente ion-icon {
+    padding-left: 2%;
+}
+
+.p-2 {
+    width: 100%;
+}
+
+.boton-desloguear, .boton-paciente{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-paciente{
+    width: 100%;
+}
+.link-sesion {
+    width: 75%;
+    margin-bottom: 20px;
+}
+.link-cancelar {
+    width: 75%;
+}
+.link-actualizar {
+    width: 100%;
+}
+
+.container-patologias {
+    padding: 20px;
+    border: 2px solid var(--color-2-2);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.container-patologia {
+    background-color: var(--color-2-2);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.boton-nueva-patologia {
+    color: var(--color-2-2);
+    border-color: var(--color-2-2);
+    width: 100%;
+}
+.boton-nueva-patologia:hover {
+    color: var(--color-2);
+    border-color: var(--color-2-1);
+    background-color: var(--blanco);
+}
+
+.linea-separadora-patologia {
+    color: var(--color-2);
+    border: solid 2px;
+    margin-bottom: 30px;
+}
+
+.sigCanvas {
+    background-color: var(--color-1-3) !important;
+    border-radius: 20px !important;
+    margin-bottom: 10px;
+}
+
+.colum-firma, .colum-aclaracion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

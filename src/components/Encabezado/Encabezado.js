@@ -1,6 +1,8 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useContext} from 'react';
 import logo from '../../imagenes/Logotipo.png';
 import styled from 'styled-components';
+import UsuarioContext from '../Context/UsuarioContext';
+import { Link } from 'react-router-dom';
 
 function Encabezado() {
     // SE AGREGA EL FONDO DIFUMINADO
@@ -28,10 +30,8 @@ function Encabezado() {
         );
     };
 
-    /* MODAL Fallida*/
-    const [showFallida, setShowFallida] = useState(false);
-    const handleCloseFallida = () => setShowFallida(false);
-    /* const handleShowFallida= () => setShowFallida(true); */
+    //Usuario Logueado
+    const {estaLogueado, usuario} = useContext(UsuarioContext);
 
     return (
         <Header scroll={scroll}>
@@ -59,7 +59,9 @@ function Encabezado() {
                         <li onClick={showNavbar}><a href="#como-funciona">Como Funciona</a></li>
                         <li onClick={showNavbar}><a href="#renovacion">Renovación</a></li>
                         <li onClick={showNavbar}><a href="#uso-practico">Uso Práctico</a></li>
-                        <li onClick={showNavbar}><a href="https://doconline-frontend.azurewebsites.net/login">Ingresar</a></li>
+                        {
+                            estaLogueado() ? <Link to={'/sesion'}><li onClick={showNavbar}>{usuario.nombre}</li></Link> : <Link to={'/login'}><li onClick={showNavbar}>Ingresar</li></Link>
+                        }
                     </ul>
                     <button
                         className="nav-btn nav-close-btn"

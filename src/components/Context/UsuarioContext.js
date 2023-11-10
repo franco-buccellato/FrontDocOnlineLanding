@@ -26,7 +26,8 @@ export const UsuarioContextProvider = ({children, onAdd}) => {
             apellido: nuevoUsuario.apellido,
             celular: nuevoUsuario.celular,
             fechaNacimiento: nuevoUsuario.fechaNacimiento,
-            documento: nuevoUsuario.documento
+            documento: nuevoUsuario.documento,
+            contrasenia: nuevoUsuario.contrasenia
             /* esAdministrador: nuevoUsuario.esAdministrador */
         }
         //TODO: Guardar el local Storag o Sesion Storage

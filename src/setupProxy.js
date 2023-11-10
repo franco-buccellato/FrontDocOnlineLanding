@@ -6,11 +6,11 @@ module.exports = function(app) {
         createProxyMiddleware(
             {
                 /* target: 'http://localhost:4000/', */
-                target: 'https://doconline-backend.azurewebsites.net/',
+                target: 'http://doconline-backend.azurewebsites.net/',
                 changeOrigin: true,
                 ws: true,
                 onProxyReq: function(request) {
-                    request.setHeader("origin", "https://doconline-backend.azurewebsites.net/");
+                    request.setHeader("origin", "http://doconline-backend.azurewebsites.net/");
                     /* request.setHeader("origin", 'http://localhost:4000/'); */
                 },
             }
