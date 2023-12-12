@@ -22,10 +22,11 @@ function Footer() {
                         <div className='container-segunda'>
                             <ul>
                                 <li className='titulo'>Empresa</li>
-                                <li>Nosotros</li>
-                                <li>Beneficios</li>
-                                <li>Servicio Remoto</li>
-                                <li>Como funciona</li>
+                                <li><a href="#nosotros">Nosotros</a></li>
+                                <li><a href="#atencion-distancia">Atención a Distancia</a></li>
+                                <li><a href="#como-funciona">Como Funciona</a></li>
+                                <li><a href="#renovacion">Renovación</a></li>
+                                <li><a href="#uso-practico">Como funciona</a></li>
                             </ul>
                         </div>
                     </div>
@@ -142,8 +143,12 @@ const FooterContainer = styled.div`
                             font-weight: 400;
                             transition: all .4s;
                             cursor: pointer;
-                            &:hover{
-                                color: #00b1ff;
+                            a{
+                                color: #595959;
+                                transition: all .4s;
+                                &:hover{
+                                    color: #00b1ff;;
+                                }
                             }
                         }
                     }

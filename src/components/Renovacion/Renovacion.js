@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { motion } from "framer-motion";
 
 
 function Renovacion() {
@@ -8,11 +8,17 @@ function Renovacion() {
         <>
             <ContenedorComoFunciona id='renovacion'>
                 <div className='content'>
-                    <div className='container-text'>
+                    <motion.div
+                        initial={{ opacity: 0, x: -120 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: .8 }}
+                        exit={{ opacity: 0 }}
+                        className='container-text'
+                    >
                         <span>Renová tu permiso</span>
                         <h3>Renovación</h3>
                         <p>Te contamos como renovar tu permiso de cultivo y transporte!</p>
-                    </div>
+                    </motion.div>
 
                 </div>
 

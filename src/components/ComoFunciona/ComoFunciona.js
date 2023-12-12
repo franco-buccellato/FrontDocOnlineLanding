@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { motion } from "framer-motion";
 
 
 function ComoFunciona() {
@@ -9,14 +9,26 @@ function ComoFunciona() {
             <Separador />
             <ContenedorComoFunciona id='como-funciona'>
                 <div className='content'>
-                    <div className='container-text'>
+                    <motion.div
+                        initial={{ opacity: 0, x: -120 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: .8 }}
+                        exit={{ opacity: 0 }}
+                        className='container-text'
+                    >
                         <span>agilidad utilizando la plataforma</span>
                         <h3>Como funciona</h3>
                         <p>Conozca cómo funciona para acceder a las pautas de salud remotas y todos los beneficios que brinda el servicio online.</p>
                         <br />
                         <p>¡Sigue las etapas paso a paso y podrás usarlo de una manera práctica y sensilla!</p>
-                    </div>
-                    <div className='container-pasos'>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, x: 120 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: .8 }}
+                        exit={{ opacity: 0 }}
+                        className='container-pasos'
+                    >
                         <div className='pasos paso1'>
                             <span>1.</span>
                             <p>Registrarse e iniciar sesión.<br />¡Es rápido y fácil!</p>
@@ -42,7 +54,7 @@ function ComoFunciona() {
                             <p>¡Haz tu cita online <br /> sin salir de casa!</p>
                             <div className='cuadradoFondo'></div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className='container-video'>
                     <iframe id='video-1' src="https://www.youtube.com/embed/2EpdYYa5oC8" allow="fullscreen" allowFullScreen="" style={{ minHeight: 'auto', height: '100%', transform: 'none', width: '100%', borderRadius: '10px' }}></iframe>

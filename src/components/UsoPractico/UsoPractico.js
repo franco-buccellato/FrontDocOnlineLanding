@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import imagenUsuPractio01 from '../../imagenes/usoPractioAceite.png';
 import imagenUsuPractio02 from '../../imagenes/usoPractioAceite2.png';
 import imgCarta from '../../imagenes/doctorTarjeta.png';
+import { motion } from "framer-motion";
 
 export default function UsoPractico() {
     return (
@@ -12,7 +13,13 @@ export default function UsoPractico() {
                     alt='carta'
                 />
             </div>
-            <div className='content'>
+            <motion.div
+                        initial={{ opacity: 0, x: -120 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: .8 }}
+                        exit={{ opacity: 0 }}
+                        className='content'
+            >
                 <div className='container-text'>
                     <span>Usos practicos</span>
                     <p>Te contamos como utilizar el aceite de cannabis.</p>
@@ -57,7 +64,7 @@ export default function UsoPractico() {
 
                 </div>
 
-            </div>
+            </motion.div>
 
         </ContainerUsoPractico>
     )

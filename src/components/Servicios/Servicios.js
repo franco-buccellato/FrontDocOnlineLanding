@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import imagenServicios from '../../imagenes/servicios-mujer.png';
+import { motion } from "framer-motion";
 
 function Servicios() {
 
@@ -14,7 +15,13 @@ function Servicios() {
                         />
                     </div>
                 </div>
-                <div className='container-text'>
+                <motion.div
+                        initial={{ opacity: 0, x: 120 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: .8 }}
+                        exit={{ opacity: 0 }}
+                        className='container-text'
+                >
                     <div className='title-content'>
                         <span>personal a tu disposición</span>
                         <h3>Servicio a Distancia</h3>
@@ -24,7 +31,7 @@ function Servicios() {
                             <p>Doc. Online fue diseñado para conectar pacientes y médicos de una manera práctica.</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
             <div className='fondo-horizontal'></div>
         </ContenedorServicios>
