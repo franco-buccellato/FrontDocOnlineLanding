@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import TarjetaServicio from './TarjetaServicio';
 import infoSimulada from './infoSimulada';
-import logo from '../../imagenes/Logotipo.png';
+import logo from '../../imagenes/Logotipo.webp';
 
 export default function CostosServicios({ setMostrarEncabezado }) {
 

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import logo from '../../imagenes/Logotipo.png';
+import logo from '../../imagenes/Logotipo.webp';
 
 function Footer() {
     return (

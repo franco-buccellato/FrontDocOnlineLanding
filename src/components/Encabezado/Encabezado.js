@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useContext} from 'react';
-import logo from '../../imagenes/Logotipo.png';
+import logo from '../../imagenes/Logotipo.webp';
 import styled from 'styled-components';
 import UsuarioContext from '../Context/UsuarioContext';
 import { Link } from 'react-router-dom';

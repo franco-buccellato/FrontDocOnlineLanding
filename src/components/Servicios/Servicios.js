@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import imagenServicios from '../../imagenes/servicios-mujer.png';
+import imagenServicios from '../../imagenes/servicios-mujer.webp';
 import { motion } from "framer-motion";
 
 function Servicios() {

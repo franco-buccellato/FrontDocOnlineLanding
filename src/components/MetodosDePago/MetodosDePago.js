@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import logo from '../../imagenes/Logotipo.png';
+import logo from '../../imagenes/Logotipo.webp';
 
 export default function MetodosDePago({ setMostrarEncabezado }) {
 

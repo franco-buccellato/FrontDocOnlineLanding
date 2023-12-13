@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import imagenUsuPractio01 from '../../imagenes/usoPractioAceite.png';
-import imagenUsuPractio02 from '../../imagenes/usoPractioAceite2.png';
-import imgCarta from '../../imagenes/doctorTarjeta.png';
+import imagenUsuPractio01 from '../../imagenes/usoPractioAceite.webp';
+import imagenUsuPractio02 from '../../imagenes/usoPractioAceite2.webp';
+import imgCarta from '../../imagenes/doctorTarjeta.webp';
 import { motion } from "framer-motion";
 
 export default function UsoPractico() {

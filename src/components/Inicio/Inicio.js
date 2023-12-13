@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import imagenTarjetas from '../../imagenes/inicio-tarjetas.png';
-import imagenTarjetasResponsive from '../../imagenes/inicio-tarjetas-responsive.png';
+import imagenTarjetas from '../../imagenes/inicio-tarjetas.webp';
+import imagenTarjetasResponsive from '../../imagenes/inicio-tarjetas-responsive.webp';
 import Button from "../Button/Button";
 
 function Inicio() {

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import imgCard01 from '../../imagenes/beneficios-card-1.png';
-import imgCard02 from '../../imagenes/beneficios-card-2.png';
-import imgCard03 from '../../imagenes/beneficios-card-3.png';
+import imgCard01 from '../../imagenes/beneficios-card-1.webp';
+import imgCard02 from '../../imagenes/beneficios-card-2.webp';
+import imgCard03 from '../../imagenes/beneficios-card-3.webp';
 import { motion } from "framer-motion"
 
 function CalidadYBeneficios() {
