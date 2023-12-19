@@ -7,17 +7,25 @@ function Inicio() {
     return (
         <Home id="inicio">
             <div className="img-responsive"></div>
+            <div className="img-responsive">
+                    <img
+                        alt="logo-doconline"
+                        src={imagenTarjetasResponsive}
+                    />
+                </div>
             <div className="content">
+
+
                 <div className="container-presentacion">
                     <h1>Tramita tu permiso de REPROCANN, sin moverte de tu casa.</h1>
                     <p><span>Doc.</span> Online conecta pacientes y médicos de forma práctica a través de un click desde donde estés, siempre priorizando tu salud!</p>
-                    <Button ruta={'/costosServicios'} text={"Comenzar ahora"}/>
+                    <Button ruta={'/costosServicios'} text={"Comenzar ahora"} />
                 </div>
                 <div className="container-img">
-                        <img
-                            alt="logo-doconline"
-                            src={imagenTarjetas}
-                        />
+                    <img
+                        alt="logo-doconline"
+                        src={imagenTarjetas}
+                    />
                 </div>
             </div>
         </Home>
@@ -67,7 +75,9 @@ const Home = styled.div`
             }
 
         }
-
+        .img-responsive{
+            display: none;
+        }
         .container-img{
             position: absolute;
             width: 49vw;
@@ -96,54 +106,24 @@ const Home = styled.div`
         padding: 0rem;
         width: 100%;
 
-        .img-responsive{
-            margin-top: 16vh;
-            /* margin: calc(12vh + 4rem) 0 4rem 0; */
-            -webkit-animation: morph 8s ease-in-out infinite;
-            animation: morph 8s ease-in-out infinite;
-            background-image: url(${imagenTarjetasResponsive});
-            background-position: 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border: none;
-            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-            height: 60rem;
-            position: relative;
-            transition: all 1s ease-in-out;
-            width: 90%;
-
-            @keyframes morph {
-      0% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-      }
-
-      50% {
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-      }
-
-      100% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-      }
-    }
-        }
 
         
         .content{
             width: 100%;
             display: flex;
             align-items: center;
-            flex-direction: column-reverse;
+            flex-direction: column;
 
             .container-presentacion{
                 max-width: 100%;
                 
-                h2{
+                h1{
                     font-size: 2rem;
                     margin: 2rem 0 2rem 0;
                     text-align: center;
                 }
                 p{
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     text-align: center;
                     font-weight: 500;
                     color: #838383;
@@ -156,7 +136,7 @@ const Home = styled.div`
                     margin: auto;
                     padding: 10px 20px;
                     border-radius: 18px;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     background: rgb(0,206,206);
                     border: none;
                     background: -moz-linear-gradient(90deg, rgba(0,206,206,1) 0%, rgba(0,177,255,1) 96%);
@@ -288,12 +268,21 @@ const Home = styled.div`
     } 
 
     @media only screen and (max-width: 1024px){
-
+        .img-responsive{
+                display: block;
+                width: 100%;
+                height: 30vh;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         .content{
             width: 90%;
             .container-img{
                 display: none;
             }    
+
         }   
     }
 `

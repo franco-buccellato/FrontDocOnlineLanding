@@ -190,6 +190,13 @@ const Header = styled.header`
         }
     }
 
+    @media only screen and (max-width: 1440px) {
+        height: 12vh;
+        .content{
+            width: 86%;
+        }
+    }
+
     @media only screen and (max-width: 1240px) {
         nav a {
 		    font-size: .9rem;
