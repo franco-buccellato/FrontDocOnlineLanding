@@ -95,7 +95,7 @@ const Header = styled.header`
     z-index: 1000;
 
     .content{
-        width: 60%;
+        width: 70%;
         margin: auto;
         display: flex;
     }
@@ -128,7 +128,7 @@ const Header = styled.header`
         color: var(--var-color-text-primary);
         text-decoration: none;
         font-weight: 600;
-		font-size: 1.1rem;
+		font-size: 1rem;
         &:hover {
 	        color: #00b1ff;
             transition: all .2s;
@@ -186,7 +186,7 @@ const Header = styled.header`
     @media only screen and (max-width: 1540px) {
         height: 12vh;
         .content{
-            width: 74%;
+            width: 76%;
         }
     }
 
