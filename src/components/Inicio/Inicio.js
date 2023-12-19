@@ -49,7 +49,7 @@ const Home = styled.div`
                 @media only screen and (max-width: 1600px) {
                     font-size: 2.2rem;
                 }
-                @media only screen and (max-width: 1220px) {
+                @media only screen and (max-width: 1320px) {
                     font-size: 1.8rem;
                 }
             }
@@ -262,8 +262,8 @@ const Home = styled.div`
     @media only screen and (max-width: 1300px) {
         .content{
             .container-img{
-                width: 36vw; 
-                height: 70vh;
+                width: 34vw; 
+                height: 80vh;
             }   
         }   
     } 
