@@ -9,7 +9,7 @@ function Inicio() {
             <div className="img-responsive"></div>
             <div className="content">
                 <div className="container-presentacion">
-                    <h2>Tramita tu permiso de REPROCANN, sin moverte de tu casa.</h2>
+                    <h1>Tramita tu permiso de REPROCANN, sin moverte de tu casa.</h1>
                     <p><span>Doc.</span> Online conecta pacientes y médicos de forma práctica a través de un click desde donde estés, siempre priorizando tu salud!</p>
                     <Button ruta={'/costosServicios'} text={"Comenzar ahora"}/>
                 </div>
@@ -37,18 +37,30 @@ const Home = styled.div`
         margin: auto;
         display: flex;
         align-items: center;
+        @media only screen and (max-width: 1600px) {
+            width: 70%;
+        }
 
         .container-presentacion{
             max-width: 55%;
-            h2{
+            h1{
                 font-size: 2.5rem;
                 margin: 2rem 0 2rem 0;
+                @media only screen and (max-width: 1600px) {
+                    font-size: 2.2rem;
+                }
+                @media only screen and (max-width: 1220px) {
+                    font-size: 1.8rem;
+                }
             }
             p{
                 font-size: 1.2rem;
                 font-weight: 500;
                 color: #838383;
                 margin: 1rem 0 3rem 0;
+                @media only screen and (max-width: 1600px) {
+                    font-size: 1rem;
+                }
                 span{
                     font-weight: bold;
                 }
@@ -178,7 +190,7 @@ const Home = styled.div`
         .content{
             .container-img{
                 width: 42vw; 
-                height: 84vh;
+                height: 80vh;
             }   
             
         }   
@@ -187,8 +199,8 @@ const Home = styled.div`
     @media only screen and (max-width: 1770px) {
         .content{
             .container-img{
-                width: 42vw; 
-                height: 80vh;
+                width: 32vw; 
+                height: 90vh;
             }   
             
         }   
@@ -197,8 +209,8 @@ const Home = styled.div`
     @media only screen and (max-width: 1690px) {
         .content{
             .container-img{
-                width: 42vw; 
-                height: 75vh;
+                width: 34vw; 
+                height: 90vh;
                 top: -4vh;
             }   
             
@@ -208,10 +220,10 @@ const Home = styled.div`
     @media only screen and (max-width: 1570px) {
         .content{
             .container-img{
-                width: 42vw; 
-                height: 72vh;
-                top: -0vh;
-            }   
+                width: 32vw; 
+                height: 80vh;
+                top: -4vh;
+            }    
             
         }   
     } 
@@ -228,31 +240,20 @@ const Home = styled.div`
     @media only screen and (max-width: 1500px) {
         .content{
             .container-img{
-                width: 42vw; 
-                height: 68vh;
-                top: 1vh;
+                width: 30vw; 
+                height: 70vh;
+
             }   
             
         }   
     } 
 
-    @media only screen and (max-width: 1500px) {
-        .content{
-            .container-img{
-                width: 42vw; 
-                height: 68vh;
-                top: 1vh;
-            }   
-            
-        }   
-    } 
 
     @media only screen and (max-width: 1400px) {
         .content{
             .container-img{
-                width: 42vw; 
-                height: 62vh;
-                top: 1vh;
+                width: 32vw; 
+                height: 70vh;
             }   
             
         }   
@@ -261,9 +262,8 @@ const Home = styled.div`
     @media only screen and (max-width: 1300px) {
         .content{
             .container-img{
-                width: 42vw; 
-                height: 56vh;
-                top: 2vh;
+                width: 36vw; 
+                height: 70vh;
             }   
         }   
     } 
@@ -271,18 +271,17 @@ const Home = styled.div`
     @media only screen and (max-width: 1200px) {
         .content{
             .container-img{
-                width: 42vw; 
-                height: 52vh;
-                top: 12vh;
+                width: 34vw; 
+                height: 64vh;
             }   
         }   
     } 
 
-    @media only screen and (max-width: 1100px) {
+    @media only screen and (max-width: 1140px) {
         .content{
             .container-img{
-                width: 42vw; 
-                height: 48vh;
+                width: 36vw; 
+                height: 62vh;
                 top: 12vh;
             }   
         }   
