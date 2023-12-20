@@ -270,6 +270,7 @@ const Home = styled.div`
     @media only screen and (max-width: 1024px){
         .img-responsive{
                 display: block;
+                margin-top: 10vh;
                 width: 100%;
                 height: 30vh;
                 img{
