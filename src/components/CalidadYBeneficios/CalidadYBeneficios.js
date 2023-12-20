@@ -129,8 +129,12 @@ const Calidad = styled.div`
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                span,p{
+                span{
                     text-align: center;
+                    font-size: 1.2rem;
+                }
+                p{
+                    font-size: 1rem;
                 }
             }
         }
@@ -239,9 +243,13 @@ const Calidad = styled.div`
                 }
                 .second-card-title{
                     font-weight: 600;
-                    font-size: 1.2rem;
+                    
                     margin: 1.6rem 0;
                     text-align: center;
+
+                    @media only screen and (max-width: 1024px) {
+                        font-size: 1rem;
+                    }
                 }
                 p{
                     font-size: 1rem;
