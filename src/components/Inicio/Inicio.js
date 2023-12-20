@@ -6,7 +6,6 @@ import Button from "../Button/Button";
 function Inicio() {
     return (
         <Home id="inicio">
-            <div className="img-responsive"></div>
             <div className="img-responsive">
                 <img
                     alt="logo-doconline"
