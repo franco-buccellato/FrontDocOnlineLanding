@@ -21,8 +21,8 @@ const LandingPage = ({setMostrarEncabezado}) => {
             <CuadradosFondo className='cuadradoFondo'/>
             <Inicio/>
             {/* <CalidadYBeneficios /> */}
-            {/* <Servicios/>
-            <ComoFunciona/> */}
+            {/* <Servicios/> */}
+            <ComoFunciona/>
             <Renovacion />
             <UsoPractico />
             <FormularioLanding/>
