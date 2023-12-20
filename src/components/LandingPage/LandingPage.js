@@ -20,12 +20,12 @@ const LandingPage = ({setMostrarEncabezado}) => {
         <div className='landing-page'>
             <CuadradosFondo className='cuadradoFondo'/>
             <Inicio/>
-            <CalidadYBeneficios />
+            {/* <CalidadYBeneficios />
             <Servicios/>
-            <ComoFunciona/>
-            {/* <Renovacion />
+            <ComoFunciona/> */}
+            <Renovacion />
             <UsoPractico />
-            <FormularioLanding/> */}
+            <FormularioLanding/>
             <Footer/>
         </div>
     );
