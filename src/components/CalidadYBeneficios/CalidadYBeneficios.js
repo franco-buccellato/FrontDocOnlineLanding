@@ -264,7 +264,7 @@ const Calidad = styled.div`
         border-radius: 10%;
         transform: rotate(174deg);
         @media only screen and (max-width: 1540px) {
-            height: 300vh;
+            height: 200vh;
             width: 88vw;
         }
         @media only screen and (max-width: 1300px) {

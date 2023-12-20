@@ -8,11 +8,11 @@ function Inicio() {
         <Home id="inicio">
             <div className="img-responsive"></div>
             <div className="img-responsive">
-                    <img
-                        alt="logo-doconline"
-                        src={imagenTarjetasResponsive}
-                    />
-                </div>
+                <img
+                    alt="logo-doconline"
+                    src={imagenTarjetasResponsive}
+                />
+            </div>
             <div className="content">
 
 
@@ -38,6 +38,10 @@ const Home = styled.div`
     width: 100%;
     height: calc(100vh - 10vh); //se resta el Encabezado
     padding: 10vh 0;
+
+    .img-responsive{
+            display: none;
+    }
     
     .content{
         width: 60%;
@@ -74,9 +78,6 @@ const Home = styled.div`
                 }
             }
 
-        }
-        .img-responsive{
-            display: none;
         }
         .container-img{
             position: absolute;
