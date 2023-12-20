@@ -40,7 +40,7 @@ const Home = styled.div`
     padding: 10vh 0;
 
     .img-responsive{
-            display: none;
+        display: none;
     }
     
     .content{
