@@ -33,8 +33,8 @@ export default function TarjetaServicio({ precio, listadoBeneficios }) {
 
 const TarjetaServicioContainer = styled.div`
     width: 34%;
-    height: 90%;
-    margin: 0 auto;
+    height: auto;
+    margin: 0  auto;
     background: white;
     border-radius: 12px;
     padding: 0 10px;
@@ -67,14 +67,16 @@ const TarjetaServicioContainer = styled.div`
             text-transform: uppercase;
             font-weight: 500;
             color:  #09c6cf;
+            padding: 1rem 0;
         }
         .container-precio{
+            padding: 0 auto 1rem auto;
             .signo, .precio{
-                font-size: 2.5rem;
+                font-size: 2.2rem;
                 font-weight: 400;
             }
             .periodo{
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 font-weight: 300;
                 
             }
@@ -91,7 +93,7 @@ const TarjetaServicioContainer = styled.div`
 
             li{
                 list-style: none;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 padding: .1rem .6rem;
                 display: flex;
                 align-items: center;
@@ -111,8 +113,9 @@ const TarjetaServicioContainer = styled.div`
     }
 
     footer{
-        width: 90%;
-        height: 12%;
+        width: 100%;
+        padding: 1rem 0;
+        height: auto;
         display: flex;
         margin: auto;
         justify-content: center;

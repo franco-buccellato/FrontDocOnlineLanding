@@ -64,7 +64,7 @@ export default function CostosServicios({ setMostrarEncabezado }) {
 
 const ContainerCostos = styled.div`
     width: 100%;
-    max-height: 100vh;
+    height: auto;
     @media only screen and (max-width: 1120px){
         height: auto;
         max-height: auto;
@@ -149,7 +149,8 @@ const ContainerCostos = styled.div`
 
         .container-cards{
             width: 100%;
-            height: 78vh;
+            height: auto;
+            padding: 2rem 0;
             display: flex;
             align-items: start;
             justify-content: space-around;

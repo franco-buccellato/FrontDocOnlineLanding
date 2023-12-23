@@ -149,7 +149,7 @@ export default function MetodosDePago({ setMostrarEncabezado }) {
 
 const ContainerMetodosDePago = styled.div`
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,6 +157,7 @@ const ContainerMetodosDePago = styled.div`
         width: 70%;
         height: 100%;
         display: flex;
+        margin-top: 6rem;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -176,13 +177,17 @@ const ContainerMetodosDePago = styled.div`
             width: 50%;
             background-color: white;
             border-radius: 12px;
-            height: 80%;
+            height: auto;
             padding: 2rem 1rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+            @media only screen and (max-width: 1024px) {
+                width: 90%;
+            }
             div{
                 height: 50%;
                 h2{
@@ -191,7 +196,7 @@ const ContainerMetodosDePago = styled.div`
                     text-align: center;
                 }
                 p{
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     line-height: 1.7;
                     text-align: center;
                     
@@ -211,6 +216,11 @@ const ContainerMetodosDePago = styled.div`
             display: flex;
             flex-direction: column;
             justify-content: space-between; 
+
+            @media only screen and (max-width: 1024px) {
+                width: 90%;
+                margin-top: 2rem;
+            }
 
             .container-alias{
                 width: 100%;
@@ -257,6 +267,9 @@ const ContainerMetodosDePago = styled.div`
                 align-items: end;
                 p{
                     font-style: italic;
+                }
+                @media only screen and (max-width: 1024px) {
+                margin:1rem 0;
                 }
             }
             .container-buttons{
