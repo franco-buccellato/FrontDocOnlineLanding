@@ -70,7 +70,7 @@ const TarjetaServicioContainer = styled.div`
             padding: 1rem 0;
         }
         .container-precio{
-            padding: 0 auto 1rem auto;
+            padding: 0 auto 1rem auto   ;
             .signo, .precio{
                 font-size: 2.2rem;
                 font-weight: 400;

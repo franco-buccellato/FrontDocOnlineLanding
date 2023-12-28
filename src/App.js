@@ -4,6 +4,7 @@ import { UsuarioContextProvider } from './components/Context/UsuarioContext';
 import LandingPage from './components/LandingPage/LandingPage';
 import Encabezado from './components/Encabezado/Encabezado';
 import CostosServicios from './components/CostosServicios/CostosServicios';
+import PasosFinales from './components/PasosFinales/PasosFinales';
 import { useState } from 'react';
 import MetodosDePago from './components/MetodosDePago/MetodosDePago';
 import BotonWhatsApp from './components/BotonWhatsApp/BotonWhatsApp';
@@ -30,6 +31,7 @@ function App() {
             <Route exact path='/' element={<LandingPage setMostrarEncabezado={setMostrarEncabezado} />} />
             <Route exact path='/costosServicios' element={<CostosServicios setMostrarEncabezado={setMostrarEncabezado}/>} />
             <Route exact path='/metodosDePago' element={<MetodosDePago setMostrarEncabezado={setMostrarEncabezado}/>} />
+            <Route exact path='/pasosFinales' element={<PasosFinales setMostrarEncabezado={setMostrarEncabezado}/>} />
             <Route exact path = '/' element = {<LandingPage/>}/>
             <Route exact path = '/login' element = {<Login/>}/>
             <Route exact path = '/sesion' element = {<SectionSesion/>}/>

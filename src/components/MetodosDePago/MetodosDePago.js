@@ -6,12 +6,13 @@ import logo from '../../imagenes/Logotipo.webp';
 export default function MetodosDePago({ setMostrarEncabezado }) {
 
 
-    //COPIAR ALIAS
+
 
     useEffect(() => {
         setMostrarEncabezado(false)
     })
 
+        //COPIAR ALIAS
     const [textoAlias, setTexto] = useState('repro.online.');
     const [copiadoAlias, setcopiadoAlias] = useState(false);
 
@@ -71,12 +72,6 @@ export default function MetodosDePago({ setMostrarEncabezado }) {
                     />
                 </div>
             </Encabezado>
-            {/* <ImgFondo>
-                <img 
-                    alt="logo-doconline"
-                    src={imgCarta}
-                />
-            </ImgFondo> */}
             <ContainerMetodosDePago>
                 <div className='content'>
                     <div className='container-text'>
@@ -265,11 +260,9 @@ const ContainerMetodosDePago = styled.div`
                 display: flex;
                 flex-direction: column;
                 align-items: end;
+                margin: 1rem 0;
                 p{
                     font-style: italic;
-                }
-                @media only screen and (max-width: 1024px) {
-                margin:1rem 0;
                 }
             }
             .container-buttons{
