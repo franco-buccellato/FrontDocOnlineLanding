@@ -1,29 +1,46 @@
 import styled from 'styled-components';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import logo from '../../imagenes/Logotipo.webp';
+import { motion } from 'framer-motion';
 import Paso1 from './Paso1';
+import Paso2 from './Paso2';
 
 
 
 export default function MetodosDePago({ setMostrarEncabezado }) {
-    
+
     useEffect(() => {
         setMostrarEncabezado(false)
     })
 
 
-    
+    const [indicePaso, setIndicePaso] = useState(0)
+
+    const todosLosPasos = [Paso1, Paso2];
+
+    const cambiarDePaso = () => {
+        setIndicePaso((indicePaso + 1) % todosLosPasos.length);
+    };
+
+    const PasoActual = todosLosPasos[indicePaso];
+
 
     return (
         <>
             <ContainerPasosFinales>
-                <div className='card'>
-                    <Paso1 /> 
+                <motion.div
+                    key={indicePaso}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.8 }}
+                    transition={{ duration: 0.5 }}
+                    className='card'
+                >
+                    <PasoActual />
                     <div className='button-siguiente--container'>
-                        <button>Siguiente</button>
+                        <button onClick={cambiarDePaso}>Siguiente</button>
                     </div>
-                </div>
+                </motion.div>
 
             </ContainerPasosFinales>
         </>

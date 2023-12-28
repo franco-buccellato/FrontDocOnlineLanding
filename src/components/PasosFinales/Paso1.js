@@ -29,7 +29,7 @@ export default function Paso1() {
             <div className='container-text'>
                 <div>
                     <h1>Registrate en la App Doc Online</h1>
-                    <p>Ingresa a la app y completa tus datos, allí te guiaremos para sacar turno, pagar y completar tus datos para los formularios de Declaración Jurada y Consentimiento Informado.</p>
+                    <p>¿Aun no estás registrado? Ingresa a la app y completa tus datos, allí te guiaremos para sacar turno, pagar y completar tus datos para los formularios de Declaración Jurada y Consentimiento Informado.</p>
                 </div>
 
                 <div>
@@ -62,7 +62,9 @@ const Paso1Container = styled.div`
         height: 100%;
         border-radius:   2rem 0 0  2rem ;
         width: 40%;
-        background-color: rgb(9, 198, 207);
+        background: -moz-linear-gradient(90deg, rgba(0,206,206,1) 0%, rgba(0,177,255,1) 96%);
+        background: -webkit-linear-gradient(90deg, rgba(0,206,206,1) 0%, rgba(0,177,255,1) 96%);
+        background: linear-gradient(90deg, rgba(0,206,206,1) 0%, rgba(0,177,255,1) 96%);
         display: flex;
         justify-content: center;
         align-items: center;
