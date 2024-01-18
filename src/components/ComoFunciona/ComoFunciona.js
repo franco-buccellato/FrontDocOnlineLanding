@@ -10,7 +10,7 @@ function ComoFunciona() {
             <ContenedorComoFunciona id='como-funciona'>
                 <div className='content'>
                     <motion.div
-                        initial={{ opacity: 0, x: -120 }}
+                        initial={{ opacity: 0, x: -10 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: .8 }}
                         exit={{ opacity: 0 }}
@@ -23,7 +23,7 @@ function ComoFunciona() {
                         <p>¡Sigue las etapas paso a paso y podrás usarlo de una manera práctica y sensilla!</p>
                     </motion.div>
                     <motion.div
-                        initial={{ opacity: 0, x: 120 }}
+                        initial={{ opacity: 0, x: 10 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: .8 }}
                         exit={{ opacity: 0 }}

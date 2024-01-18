@@ -10,7 +10,7 @@ function CalidadYBeneficios() {
             <div className='fondoBlanco'></div>
             <div className='content'>
                 <motion.div
-                        initial={{ opacity: 0, x: -120 }}
+                        initial={{ opacity: 0, x: -10 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: .8 }}
                         exit={{ opacity: 0 }}
@@ -20,7 +20,7 @@ function CalidadYBeneficios() {
                     <p>Doc.Online simplificará tu vida!</p>
                 </motion.div>
                 <motion.div
-                        initial={{ opacity: 0, x: 120 }}
+                        initial={{ opacity: 0, x: 10 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: .8 }}
                         exit={{ opacity: 0 }}
@@ -40,7 +40,7 @@ function CalidadYBeneficios() {
                     </div>
                 </motion.div>
                 <motion.div
-                        initial={{ opacity: 0, x: -120 }}
+                        initial={{ opacity: 0, x: -10 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: .8 }}
                         exit={{ opacity: 0 }}
@@ -51,7 +51,7 @@ function CalidadYBeneficios() {
                     <p className='second-subtitle'>Entérate cuáles son las razones para unirte a nuestra plataforma online,dejando tu salud al día y ahorrando mucho de una forma ágil y práctica.</p>
                 </motion.div>
                 <motion.div
-                        initial={{ opacity: 0, x: 120 }}
+                        initial={{ opacity: 0, x: 10 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: .8 }}
                         exit={{ opacity: 0 }}
