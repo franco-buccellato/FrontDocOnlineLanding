@@ -55,7 +55,7 @@ const ContenedorServicios = styled.div`
 
         .container-img{
             margin-top: 10rem;
-            width: 58rem; 
+            width: 50rem; 
             height: 36rem; 
             left: -10rem;
             background-color: #ccc;
@@ -69,16 +69,16 @@ const ContenedorServicios = styled.div`
                 display: none;
             }
             @media only screen and (max-width: 1670px) {
-                width: 52rem; 
+                width: 42rem; 
                 height: 34rem; 
             }
             @media only screen and (max-width: 1540px) {
-                width: 44rem; 
+                width: 40rem; 
                 height: 34rem; 
             }
             @media only screen and (max-width: 1270px) {
-                width: 40rem; 
-                height: 30rem; 
+                width: 34rem; 
+                height: 26rem; 
             }
             @media only screen and (max-width: 1120px) {
                 width: 38rem; 

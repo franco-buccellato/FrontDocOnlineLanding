@@ -261,7 +261,7 @@ const Calidad = styled.div`
     }
 
     .fondoBlanco{
-        height: 152vh;
+        height: 160vh;
         width: 80vw;
         background-color: white;
         position: absolute;
@@ -272,12 +272,13 @@ const Calidad = styled.div`
         border-radius: 10%;
         transform: rotate(174deg);
         @media only screen and (max-width: 1540px) {
-            height: 250vh;
-            width: 88vw;
+            height: 170vh;
+            width: 86vw;
         }
         @media only screen and (max-width: 1300px) {
-            height: 250vh;
+            height: 180vh;
             width: 86vw;
+            transform: rotate(180deg);
         }  
         @media only screen and (max-width: 1100px) {
             transform: rotate(180deg);
