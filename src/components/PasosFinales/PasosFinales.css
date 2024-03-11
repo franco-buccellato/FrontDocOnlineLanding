@@ -1,0 +1,141 @@
+.container-paso{
+    height: 60vh;
+    width: 100%;
+    padding: 0 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.fondoPaso1{
+    background-color: blue;
+}
+
+.fondoPaso2{
+    background-color: green;
+}
+
+.fondoPaso3{
+    background-color: rgb(148, 33, 171);
+}
+
+@media only screen and (max-width: 1540px) {
+    .container-paso{
+        padding: 0 2rem;
+        height: auto;
+    }  
+}
+
+@media only screen and (max-width: 1240px) {
+    .container-paso{
+        padding: 4rem 2rem;
+        height: auto;
+    }  
+}
+
+@media only screen and (max-width: 1240px) {
+    .container-paso{
+        flex-direction: column;
+        gap: 2rem;
+    }  
+}
+
+.numeracion-container{
+    width: 20%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.numeracion-container .circulo{
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #00b1ff;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.info-container{
+    width: 80%;
+    padding: 0 2rem ;
+}
+
+.numeracion-container .circulo span{
+    color: white;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 1240px) {
+    .numeracion-container .circulo{
+        width: 4rem;
+        height: 4rem;
+    } 
+
+    .numeracion-container div span{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .info-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        padding: 0;        
+    }  
+}
+
+
+.info-container .titulo{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1240px) {
+    .info-container .titulo{
+        text-align: center;
+    }  
+}
+
+.info-container .texto{
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 1240px) {
+    .info-container .texto{
+        text-align: center;
+    }  
+}
+
+.info-container button{
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+
+.lineaSuperior{
+    background-color: #00b1ff;
+    width: .2rem;
+    height: 100%;
+}
+
+.lineaInferior{
+    background-color: #00b1ff;
+    width: .2rem;
+    height: 100%;
+}
+
+.invisible{
+    opacity: 0;
+}

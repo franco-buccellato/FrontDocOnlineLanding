@@ -200,7 +200,7 @@ const ContainerUsoPractico = styled.div`
                 .button {
                     bottom: 2rem;
                     position: absolute;
-                    width: 150px;
+                    width: 160px;
                     height: 40px;
                     cursor: pointer;
                     display: flex;
@@ -223,7 +223,7 @@ const ContainerUsoPractico = styled.div`
                         position: absolute;
                         transform: translateX(108px);
                         height: 100%;
-                        width: 39px;
+                        width: 50px;
                         background-color: #00b1ff;
                         display: flex;
                         align-items: center;
@@ -231,7 +231,7 @@ const ContainerUsoPractico = styled.div`
                         padding-right: 5px;
                     }
                     svg {
-                        width: 20px;
+                        width: 24px;
                         fill: white;
                     }
                     &:hover{

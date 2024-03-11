@@ -13,7 +13,7 @@ function Inicio() {
                     <h1>Tramita tu permiso de REPROCANN, sin moverte de tu casa.</h1>
                     <p><span>Doc.</span> Online conecta pacientes y médicos de forma práctica a través de un click desde donde estés, siempre priorizando tu salud!</p>
                     <div className='button'>
-                        <Button ruta={'/costosServicios'} text={"Comenzar ahora"} />
+                        <Button ruta={'/pasosFinales'} text={"Comenzar ahora"} />
                     </div>
                     
                 </div>
@@ -35,7 +35,8 @@ const Home = styled.div`
     height: 90vh; //se resta el Encabezado
     position: relative;
     @media only screen and (max-width: 1024px) {
-        background-image: url('../../imagenes/inicio-tarjetas-responsive.webp');
+        background-image: url('../../imagenes/cartaAbierta.webp');
+
 
         .opacidad{
             width: 100%;

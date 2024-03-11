@@ -60,7 +60,7 @@ function Encabezado() {
                         <li onClick={showNavbar}><a href="#renovacion">Renovación</a></li>
                         <li onClick={showNavbar}><a href="#uso-practico">Uso Práctico</a></li>
                         {
-                            estaLogueado() ? <Link to={'/sesion'}><li onClick={showNavbar}>{usuario.nombre}</li></Link> : <Link to={'/login'}><li onClick={showNavbar}>Ingresar</li></Link>
+                            estaLogueado() ? <Link to={'/sesion'}><li onClick={showNavbar}>{usuario.nombre}</li></Link> : <Link to={'https://doconlineargentina.com/turnero/'}><li onClick={showNavbar}>Ingresar</li></Link>
                         }
                     </ul>
                     <button

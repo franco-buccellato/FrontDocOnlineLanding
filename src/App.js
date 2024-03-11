@@ -33,7 +33,7 @@ function App() {
             <Route exact path='/metodosDePago' element={<MetodosDePago setMostrarEncabezado={setMostrarEncabezado}/>} />
             <Route exact path='/pasosFinales' element={<PasosFinales setMostrarEncabezado={setMostrarEncabezado}/>} />
             <Route exact path = '/' element = {<LandingPage/>}/>
-            <Route exact path = '/login' element = {<Login/>}/>
+            <Route exact path = '/login' element = {<Login setMostrarEncabezado={setMostrarEncabezado}/>}/>
             <Route exact path = '/sesion' element = {<SectionSesion/>}/>
             <Route exact path = '/paciente/' element = {<PacienteContainer/>}/>
           </Routes>}
