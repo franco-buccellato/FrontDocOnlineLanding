@@ -7,18 +7,27 @@
     align-items: center;
 }
 
-
-
-.fondoPaso1{
-    background-color: blue;
+.containerhola{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
 
+
+
 .fondoPaso2{
-    background-color: green;
+    background-color: none;
 }
 
 .fondoPaso3{
-    background-color: rgb(148, 33, 171);
+    background-color: none;
+}
+
+.fondoPaso4{
+    background-color: none;
 }
 
 @media only screen and (max-width: 1540px) {
@@ -68,6 +77,7 @@
     width: 80%;
     padding: 0 2rem ;
 }
+
 
 .numeracion-container .circulo span{
     color: white;
@@ -138,4 +148,9 @@
 
 .invisible{
     opacity: 0;
+}
+
+
+.img-fondoPaso1{
+    background-image: url('../../imagenes/cartaAbierta.webp');
 }
