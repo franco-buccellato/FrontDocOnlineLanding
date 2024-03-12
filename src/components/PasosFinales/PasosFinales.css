@@ -1,4 +1,4 @@
-.container-paso{
+.container--pasos{
     height: 60vh;
     width: 100%;
     padding: 0 6rem;
@@ -7,45 +7,54 @@
     align-items: center;
 }
 
-.containerhola{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    
-    background-repeat: no-repeat;
-    object-fit: cover;
+
+
+.fotoFondo1{
+    position: absolute;
+    right: 2rem;
+    margin-top: 18rem;
 }
 
-
-
-.fondoPaso2{
-    background-color: none;
-}
-
-.fondoPaso3{
-    background-color: none;
-}
-
-.fondoPaso4{
-    background-color: none;
+.fotoFondo2{
+    position: absolute;
+    left: 60%;
+    margin-top: 32rem;
+    width: 400px;
 }
 
 @media only screen and (max-width: 1540px) {
-    .container-paso{
+    .fotoFondo1{
+        width: 200px;
+    }   
+}
+
+@media only screen and (max-width: 1240px) {
+    .fotoFondo1{
+        display: none;
+    }   
+    .fotoFondo2{
+        display: none;
+    } 
+}
+
+
+
+@media only screen and (max-width: 1540px) {
+    .container--pasos{
         padding: 0 2rem;
-        height: auto;
+
     }  
 }
 
 @media only screen and (max-width: 1240px) {
-    .container-paso{
+    .container--pasos{
         padding: 4rem 2rem;
         height: auto;
     }  
 }
 
 @media only screen and (max-width: 1240px) {
-    .container-paso{
+    .container--pasos{
         flex-direction: column;
         gap: 2rem;
     }  
@@ -151,6 +160,4 @@
 }
 
 
-.img-fondoPaso1{
-    background-image: url('../../imagenes/cartaAbierta.webp');
-}
+
