@@ -161,7 +161,7 @@ const ContainerMetodosDePago = styled.div`
             width: 74%;
         }
         @media only screen and (max-width: 1024px) {
-            width: 90%;
+            width: 100%;
         }
         @media only screen and (max-width: 920px){
             flex-direction: column;
@@ -214,7 +214,7 @@ const ContainerMetodosDePago = styled.div`
 
             @media only screen and (max-width: 1024px) {
                 width: 90%;
-                margin-top: 2rem;
+                margin-top: 1rem;
             }
 
             .container-alias{
@@ -248,6 +248,9 @@ const ContainerMetodosDePago = styled.div`
 
                     }
                     .dato-button{
+                        @media only screen and (max-width: 1024px) {
+                            display: none;
+                        }
                         button{
                             border: none;
                             background: none;
@@ -269,6 +272,7 @@ const ContainerMetodosDePago = styled.div`
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
+                padding: 1rem 0 2rem 0;
             }
         }
     }

@@ -8,58 +8,63 @@ export default function UsoPractico() {
     return (
         <ContainerUsoPractico id='uso-practico'>
             <div className='container-imgFondo'>
-                <img 
+                <img
                     src={imgCarta}
                     alt='carta'
                 />
             </div>
             <motion.div
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: .8 }}
-                        exit={{ opacity: 0 }}
-                        className='content'
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: .8 }}
+                exit={{ opacity: 0 }}
+                className='content'
             >
                 <div className='container-text'>
                     <span>Usos practicos</span>
                     <p>Te contamos como utilizar el aceite de cannabis.</p>
                 </div>
-                <div className='card' style={{flexDirection: 'row'}}>
+                <div className='card' style={{ flexDirection: 'row' }}>
                     <img
                         alt="logo-doconline"
                         src={imagenUsuPractio01}
-                        style={{borderRadius: '12px 0 0 12px'}}
+                        style={{ borderRadius: '12px 0 0 12px' }}
                     />
                     <div className='card-container-text'>
                         <div>
                             <h4>Guía para hacer tu propio aceite de cannabis.</h4>
                             <p>Dados los innumerables beneficios que tiene el aceite de cannabis, es importante que los pacientes sepan como realizar su propia medicina.</p>
-                            <a href="https://drive.google.com/file/d/1OYs8sBzpi8uln-1kGxpTrOOcEPXWdkWG/view" target="_blank" rel="noreferrer">
-                                <button class="button" type="button" style={{ right: '2rem' }}>
-                                    <span class="button__text">Descargar</span>
-                                    <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
-                                </button>
-                            </a>
+                            <div className='container-button'>
+                                <a href="https://drive.google.com/file/d/1OYs8sBzpi8uln-1kGxpTrOOcEPXWdkWG/view" target="_blank" rel="noreferrer">
+                                    <button class="button" type="button" style={{ right: '2rem' }}>
+                                        <span class="button__text">Descargar</span>
+                                        <span class="button__icon"><svg fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16"><path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708" /></svg></span>
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div className='card' style={{flexDirection: 'row-reverse'}}>
+                <div className='card' style={{ flexDirection: 'row-reverse' }}>
                     <img
                         alt="logo-doconline"
                         src={imagenUsuPractio02}
-                        style={{borderRadius: '0 12px 12px 0'}}
+                        style={{ borderRadius: '0 12px 12px 0' }}
                     />
                     <div className='card-container-text'>
 
                         <h4>¿Cómo tomar el aceite de cannabis?</h4>
                         <p>Es muy importante hacer la planificación de uso y dosificación de las gotas, ya que la efectividad de la terapia esta dada por la continuidad de la administración.</p>
-                        <a href="https://drive.google.com/file/d/1QTIPfboOJytPdNvqGpu4GfXalUr5RYhr/view" target="_blank" rel="noreferrer">
-                            <button class="button" type="button" style={{ left: '2rem' }}>
-                                <span class="button__text">Descargar</span>
-                                <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
-                            </button>
-                        </a>
+                        <div className='container-button'>
+                            <a href="https://drive.google.com/file/d/1QTIPfboOJytPdNvqGpu4GfXalUr5RYhr/view" target="_blank" rel="noreferrer">
+                                <button class="button" type="button">
+                                    <span class="button__text">Descargar</span>
+                                    <span class="button__icon"><svg fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16"><path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708" /></svg></span>
+                                </button>
+                            </a>
+                        </div>
+
                     </div>
 
                 </div>
@@ -197,58 +202,50 @@ const ContainerUsoPractico = styled.div`
                         line-height: 26px;
                     }
                 }
-                .button {
-                    bottom: 2rem;
-                    position: absolute;
-                    width: 160px;
-                    height: 40px;
-                    cursor: pointer;
+                .container-button{
+                    width: 100%;
                     display: flex;
-                    align-items: center;
-                    border: none;
-                    background-color: #f1f1f3;
-                    border-radius: 10px;
-                    overflow: hidden;
                     @media only screen and (max-width: 1024px){
-                        right: 2rem !important;
+                        justify-content: end;
                     }
-                    .button__icon, .button__text {
-                        transition: all 0.3s;
-                    }
-                    .button__text {
-                        transform: translateX(22px);
-                        font-weight: 600;
-                    }
-                    .button__icon {
-                        position: absolute;
-                        transform: translateX(108px);
-                        height: 100%;
-                        width: 50px;
-                        background-color: #00b1ff;
+                    
+                    .button {
+                        padding: 6px 12px;
+                        border: 2px solid #00b1ff;
+                        border-radius: 12px;
                         display: flex;
-                        align-items: center;
                         justify-content: center;
-                        padding-right: 5px;
-                    }
-                    svg {
-                        width: 24px;
-                        fill: white;
-                    }
-                    &:hover{
-                        background:#f1f1f3;
-                    }
-                    &:hover .button__text {
-                        color: transparent;
-                    }
-                    &:hover .button__text {
-                        color: transparent;
-                    }
-                    &:hover .button__icon {
-                        width: 148px;
-                        transform: translateX(0);
-                    }
+                        align-items: center;
+                        background-color: white;
+                        gap: .8rem;
 
+                        &:hover{
+                            transition: .4s;
+                            background: #00b1ff;
+                            .button__text{
+                                color: #ffff;
+                            }
+                            .button__icon{
+                                svg{
+                                    color: #fff;  
+                                }
+                            }
+                        }
+                        .button__text{
+                            color: #00b1ff;
+                            font-weight: 600;
+                        }
+                        .button__icon{
+                            svg{
+                                width: 1.4rem;
+                                color: #00b1ff;
+                                
+                            }
+                            
+                        }
+                    }
                 }
+
             }
         }
     }
