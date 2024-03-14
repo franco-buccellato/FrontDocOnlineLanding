@@ -32,7 +32,7 @@ export default function MetodosDePago({ setMostrarEncabezado }) {
 
 
             <div className='container--pasos fondoPaso1'>
-            
+
                 <img
                     alt="logo-doconline"
                     src={fotoFondo1}
@@ -46,11 +46,11 @@ export default function MetodosDePago({ setMostrarEncabezado }) {
                 </div>
 
                 <motion.div
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: .8 }}
-                        exit={{ opacity: 0 }}
-                        className='info-container'
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: .8 }}
+                    exit={{ opacity: 0 }}
+                    className='info-container'
                 >
                     <h1 className='titulo'>Registrate en la App Doc Online</h1>
                     <p className='texto'>Ingresa a la app y completa tus datos, allí te guiaremos para sacar turno, pagar y completar tus datos para los formularios de Declaración Jurada y Consentimiento Informado.</p>
@@ -69,12 +69,17 @@ export default function MetodosDePago({ setMostrarEncabezado }) {
                 </div>
 
                 <motion.div
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: .8 }}
-                        exit={{ opacity: 0 }}
-                        className='info-container'
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: .8 }}
+                    exit={{ opacity: 0 }}
+                    className='info-container'
                 >
+                    <img
+                        alt="logo-doconline"
+                        src={fotoFondo2}
+                        className="fotoFondo2"
+                    />
                     <h1 className='titulo'>Valida tú identidad en Mi Argentina</h1>
                     <ul className='texto'>
                         <li>Ingresar el <strong>domicilio real</strong> dónde van a estar tus plantas.</li>
@@ -85,45 +90,22 @@ export default function MetodosDePago({ setMostrarEncabezado }) {
                 </motion.div>
             </div>
 
-            <div className='container--pasos fondoPaso3'>
 
-                <img
-                    alt="logo-doconline"
-                    src={fotoFondo2}
-                    className="fotoFondo2"
-                />
-                <div className='numeracion-container'>
-                    <div className='lineaSuperior'></div>
-                    <div className='circulo'><span>3</span></div>
-                    <div className='lineaInferior'></div>
-                </div>
 
-                <motion.div
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: .8 }}
-                        exit={{ opacity: 0 }}
-                        className='info-container'
-                >
-                    <h1 className='titulo'>¡Ya casi finalizamos!</h1>
-                    <p className='texto'>Completa el formulario en nuestra plataforma para que el Dr. pueda registrar tus datos en la historia clínica.</p>
-                    <Button type="submit" text={"Formulario Doc.Online"} ruta={"https://doconlineargentina.com/turnero/formulario-1"} className="butonRegistro"></Button >
-                </motion.div>
-            </div>
 
             <div className='container--pasos fondoPaso4'>
                 <div className='numeracion-container'>
                     <div className='lineaSuperior'></div>
-                    <div className='circulo'><span>4</span></div>
+                    <div className='circulo'><span>3</span></div>
                     <div className='lineaInferior invisible'></div>
                 </div>
 
                 <motion.div
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: .8 }}
-                        exit={{ opacity: 0 }}
-                        className='info-container'
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: .8 }}
+                    exit={{ opacity: 0 }}
+                    className='info-container'
                 >
                     <h1 className='titulo'>¡Listo!</h1>
                     <p className='texto'>Atención médica, en el día y horario del turno asignado realizaremos la consulta vía WhatsApp.</p>

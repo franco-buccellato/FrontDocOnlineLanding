@@ -63,7 +63,7 @@ function CalidadYBeneficios() {
                             src={imgCard01}
                         />
                         <span className='second-card-title'>Accesibilidad</span>
-                        <p>El servicio online garantizada que las consultas se realicen estés donde estés. <br /> <span>Doc.</span>Online permite el acceso desde la comodidad de su hogar</p>
+                        <p>El servicio online garantiza que las consultas se realicen estés donde estés. <br /> <span>Doc.</span>Online permite el acceso desde la comodidad de su hogar</p>
                     </div>
                     <div className='second-card-info'>
                         <img

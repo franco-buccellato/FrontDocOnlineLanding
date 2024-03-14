@@ -6,6 +6,7 @@ import CalidadYBeneficios from '../CalidadYBeneficios/CalidadYBeneficios';
 import Servicios from '../Servicios/Servicios';
 import FormularioLanding from '../FormularioLanding/FormularioLanding';
 import Renovacion from '../Renovacion/Renovacion';
+import QuienesSomos from '../QuienesSomos/QuienesSomos';
 import { useEffect } from 'react';
 import UsoPractico from '../UsoPractico/UsoPractico';
 
@@ -21,6 +22,7 @@ const LandingPage = ({setMostrarEncabezado}) => {
             <CuadradosFondo className='cuadradoFondo'/>
             <Inicio/>
             <CalidadYBeneficios />
+            <QuienesSomos />
             <Servicios/>
             <ComoFunciona/>
             <Renovacion />

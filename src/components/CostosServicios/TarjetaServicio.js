@@ -1,16 +1,34 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import axios from 'axios';
 
 export default function TarjetaServicio({ precio, listadoBeneficios }) {
+
+    const [precioTransf, setPrecioTransf] = useState(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('https://v2.doconlineargentina.com/api/turnero.precios');
+                const precioTransf = response.data.precioTransf;
+                setPrecioTransf(precioTransf);
+            } catch (error) {
+                console.error('Error al obtener el precio:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
     return (
         <TarjetaServicioContainer>
-            
+
             <header>
                 <span className='tipo'>Renovación</span>
                 <div className='container-precio'>
                     <span className='signo'>$</span>
-                    <span className='precio'>{precio}</span>
+                    <span className='precio'>{precioTransf !== null ? precioTransf : precio}</span>
                     <span className='periodo'>/por 3 años</span>
                 </div>
             </header>
