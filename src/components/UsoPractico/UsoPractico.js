@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import imagenUsuPractio01 from '../../imagenes/usoPractioAceite.webp';
 import imagenUsuPractio02 from '../../imagenes/usoPractioAceite2.webp';
+import imgLeyes from '../../imagenes/img-leyes.webp';
 import imgCarta from '../../imagenes/doctorTarjeta.webp';
 import { motion } from "framer-motion";
 
@@ -24,6 +25,7 @@ export default function UsoPractico() {
                     <span>Usos practicos</span>
                     <p>Te contamos como utilizar el aceite de cannabis.</p>
                 </div>
+
                 <div className='card' style={{ flexDirection: 'row' }}>
                     <img
                         alt="logo-doconline"
@@ -32,7 +34,7 @@ export default function UsoPractico() {
                     />
                     <div className='card-container-text'>
                         <div>
-                            <h4>Guía para hacer tu propio aceite de cannabis.</h4>
+                            <h4>Guía para hacer tu propio aceite de cannabis</h4>
                             <p>Dados los innumerables beneficios que tiene el aceite de cannabis, es importante que los pacientes sepan como realizar su propia medicina.</p>
                             <div className='container-button'>
                                 <a href="https://drive.google.com/file/d/1OYs8sBzpi8uln-1kGxpTrOOcEPXWdkWG/view" target="_blank" rel="noreferrer">
@@ -66,8 +68,31 @@ export default function UsoPractico() {
                         </div>
 
                     </div>
-
                 </div>
+
+                <div className='card' style={{ flexDirection: 'row' }}>
+                    <img
+                        alt="logo-doconline"
+                        src={imgLeyes}
+                        style={{ borderRadius: '12px 0 0 12px' }}
+                    />
+                    <div className='card-container-text'>
+                        <div>
+                            <h4>Leyes Reprocann</h4>
+                            <p>Te facilitamos las leyes para que puedas ver tus derechos por vos mismo/a.</p>
+                            <div className='container-button'>
+                                <a href="https://drive.google.com/drive/u/0/folders/1KfXcT4-kHizJD78wzm6EcnzkGlkO7b_H" target="_blank" rel="noreferrer">
+                                    <button class="button" type="button" style={{ right: '2rem' }}>
+                                        <span class="button__text">Descargar</span>
+                                        <span class="button__icon"><svg fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16"><path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708" /></svg></span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
 
             </motion.div>
 
@@ -167,6 +192,7 @@ const ContainerUsoPractico = styled.div`
             
             img{
                 width: 60%;
+                max-width: 24rem;
                 height: 20rem;
                 object-fit: cover;
                 border: none;
