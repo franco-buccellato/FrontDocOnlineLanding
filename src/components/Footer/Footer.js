@@ -17,7 +17,7 @@ function Footer() {
                                 />
                                 <p><span>DOC.</span>Online</p>
                             </div>
-                            <p>Cuidando tu salud <br/> estés donde estés.</p>
+                            <p>Cuidando tu salud <br /> estés donde estés.</p>
                         </div>
                         <div className='container-segunda'>
                             <ul>
@@ -46,12 +46,11 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-
-                <div>
-                    <p>© 2023</p>
-                    <a><strong>Mineris</strong></a>
-                    <p>Todos los derechos reservados.</p>
-                </div>
+            </div>
+            <div className='copy-mineris'>
+                <p>© 2023</p>
+                <a href='https://mineris.com.ar/' target='__blank'><strong>Mineris</strong></a>
+                <p>Todos los derechos reservados.</p>
             </div>
         </FooterContainer>
     );
@@ -197,6 +196,14 @@ const FooterContainer = styled.div`
             }
 
         }
+    }
+
+    .copy-mineris{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .4rem;
     }
     
     
