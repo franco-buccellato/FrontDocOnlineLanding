@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 import logo from '../../imagenes/Logotipo.webp';
 import fotoFondo1 from '../../imagenes/doctorTarjeta.webp';
 import fotoFondo2 from '../../imagenes/cartaAbierta.webp';
-import ButtonBlank from "../Button/ButtonBlank";
 import Button from "../Button/Button";
 
 
@@ -55,7 +54,7 @@ export default function MetodosDePago({ setMostrarEncabezado }) {
                 >
                     <h1 className='titulo'>Registrate en la App Doc Online</h1>
                     <p className='texto'>Ingresa a la app y completa tus datos, allí te guiaremos para sacar turno, pagar y completar tus datos para los formularios de Declaración Jurada y Consentimiento Informado.</p>
-                    <ButtonBlank type="submit" text={"Registrarse"} ruta={"https://doconlineargentina.com/turnero/"} className="butonRegistro"></ButtonBlank >
+                    <Button type="submit"  target={"__blank"} text={"Registrarse"} ruta={"https://doconlineargentina.com/turnero/"} className="butonRegistro"></Button >
                 </motion.div>
 
                 <div className='img-fondoPaso1'>
@@ -87,7 +86,7 @@ export default function MetodosDePago({ setMostrarEncabezado }) {
                         <li>Siempre poner <strong>9 plantas</strong>, ya que es el maximo de numeros de plantas por personas</li>
                         <li>Actualizaciones en la <strong>Ley 27.350</strong>. Cabe destacar que la ley NO es retroactiva.Por lo tanto, los permisos/renovaciones que se realizaron a partir del 20/04/23 van a tener validez de 3 años.</li>
                     </ul>
-                    <ButtonBlank type="submit" text={"Valida tu identidad"} ruta={"https://reprocann.msal.gob.ar/auth"} className="butonRegistro"></ButtonBlank >
+                    <Button type="submit" target={"__blank"} text={"Valida tu identidad"} ruta={"https://reprocann.msal.gob.ar/auth"} className="butonRegistro"></Button >
                 </motion.div>
             </div>
 
