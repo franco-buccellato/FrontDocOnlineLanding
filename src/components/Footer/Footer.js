@@ -46,6 +46,12 @@ function Footer() {
                         </div>
                     </div>
                 </div>
+
+                <div>
+                    <p>© 2023</p>
+                    <a><strong>Mineris</strong></a>
+                    <p>Todos los derechos reservados.</p>
+                </div>
             </div>
         </FooterContainer>
     );

@@ -1,6 +1,7 @@
 const infoCards = [
 
     {
+        precio: "14.400",
         listadoBeneficios: [
             "Gestión del trámite de Reprocann.",
             "Consulta médica.",
@@ -12,6 +13,7 @@ const infoCards = [
     },
 
     {
+        precio: "14.400",
         listadoBeneficios: [
             "Configuramos tu cuenta de Reprocann por vos.",
             "Gestión del tramite Reprocann.",

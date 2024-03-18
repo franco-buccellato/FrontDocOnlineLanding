@@ -13,7 +13,7 @@ function Inicio() {
                     <h1>Tramita tu permiso de REPROCANN, sin moverte de tu casa.</h1>
                     <p><span>Doc.</span> Online conecta pacientes y médicos de forma práctica a través de un click desde donde estés, siempre priorizando tu salud!</p>
                     <div className='button'>
-                        <Button ruta={'/costosServicios'} text={"Comenzar ahora"} />
+                        <Button ruta={'/pasosFinales'} text={"Comenzar ahora"} />
                     </div>
                     
                 </div>
