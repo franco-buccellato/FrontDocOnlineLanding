@@ -202,6 +202,7 @@ const FooterContainer = styled.div`
         display: flex;
         justify-content: center;
         gap: .4rem;
+        margin-top: 2rem;
 
         .mineris{
             color: #00b1ff;
