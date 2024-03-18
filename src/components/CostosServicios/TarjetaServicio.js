@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import axios from 'axios';
 
-export default function TarjetaServicio({ precio, listadoBeneficios, tipo }) {
+export default function TarjetaServicio({ precio, listadoBeneficios }) {
 
     const [precioTransf, setPrecioTransf] = useState(null);
 
@@ -25,7 +25,7 @@ export default function TarjetaServicio({ precio, listadoBeneficios, tipo }) {
         <TarjetaServicioContainer>
 
             <header>
-                <span className='tipo'>{tipo}</span>
+                <span className='tipo'>Por primera vez</span>
                 <div className='container-precio'>
                     <span className='signo'>$</span>
                     <span className='precio'>{precioTransf !== null ? precioTransf : precio}</span>
