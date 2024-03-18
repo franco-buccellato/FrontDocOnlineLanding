@@ -7,6 +7,9 @@ import Servicios from '../Servicios/Servicios';
 import FormularioLanding from '../FormularioLanding/FormularioLanding';
 import Renovacion from '../Renovacion/Renovacion';
 import QuienesSomos from '../QuienesSomos/QuienesSomos';
+import Opiniones from '../Opiniones/Opiniones';
+import QuienesPueden from '../QuienesPueden/QuienesPueden';
+import Faq from '../Faq/Faq';
 import { useEffect } from 'react';
 import UsoPractico from '../UsoPractico/UsoPractico';
 
@@ -27,6 +30,9 @@ const LandingPage = ({setMostrarEncabezado}) => {
             <ComoFunciona/>
             <Renovacion />
             <UsoPractico />
+            <Faq />
+            <Opiniones />
+            <QuienesPueden />
             <FormularioLanding/>
             <Footer/>
         </div>

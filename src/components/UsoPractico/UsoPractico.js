@@ -95,7 +95,6 @@ export default function UsoPractico() {
 
 
             </motion.div>
-
         </ContainerUsoPractico>
     )
 }
