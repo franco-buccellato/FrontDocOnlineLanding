@@ -49,7 +49,7 @@ function Footer() {
             </div>
             <div className='copy-mineris'>
                 <p>© 2023</p>
-                <a href='https://mineris.com.ar/' target='__blank'><strong>Mineris</strong></a>
+                <a href='https://mineris.com.ar/' target='__blank' className='mineris'><strong>Mineris</strong></a>
                 <p>Todos los derechos reservados.</p>
             </div>
         </FooterContainer>
@@ -61,7 +61,6 @@ export default Footer;
 const FooterContainer = styled.div`
     width: 100%;
     background: white;
-    padding: 0rem 0 6rem 0;
     background-color: #f9f9f9;
     @media only screen and (max-width: 920px){
         padding: 5rem 0 2rem 0;
@@ -202,8 +201,11 @@ const FooterContainer = styled.div`
         width: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
         gap: .4rem;
+
+        .mineris{
+            color: #00b1ff;
+        }
     }
     
     
