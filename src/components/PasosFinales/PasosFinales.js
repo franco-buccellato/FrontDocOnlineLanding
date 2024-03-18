@@ -110,7 +110,7 @@ export default function MetodosDePago({ setMostrarEncabezado }) {
                     <h1 className='titulo'>¡Listo!</h1>
                     <p className='texto'>Atención médica, en el día y horario del turno asignado realizaremos la consulta vía WhatsApp.</p>
                     <p className='texto'>En las próximas 24hs hábiles después del turno, te notificaremos que tu vinculación ha sido realizada con éxito y te guiaremos paso a paso para que la puedas ver desde tu cuenta en Reprocann.</p>
-                    <Button type="submit" text={"Abonar servicio"} ruta={"/costosServicios"} className="butonRegistro"></Button >
+                    <Button type="submit" text={"Volver al inicio"} ruta={"/"} className="butonRegistro"></Button >
                 </motion.div>
             </div>
 

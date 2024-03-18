@@ -40,7 +40,7 @@ export default function TarjetaServicio({ precio, listadoBeneficios }) {
 
             </div>
             <footer>
-                <Link to='/metodosDePago'>
+                <Link to='https://doconlineargentina.com/turnero/login/pagweb'>
                     <button>Abonar</button>
                 </Link>
             </footer>
