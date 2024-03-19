@@ -52,9 +52,18 @@ export default function MetodosDePago({ setMostrarEncabezado }) {
                     exit={{ opacity: 0 }}
                     className='info-container'
                 >
-                    <h1 className='titulo'>Registrate en la App Doc Online</h1>
-                    <p className='texto'>Ingresa a la app y completa tus datos, allí te guiaremos para sacar turno, pagar y completar tus datos para los formularios de Declaración Jurada y Consentimiento Informado.</p>
-                    <Button type="submit"  target={"__blank"} text={"Registrarse"} ruta={"https://doconlineargentina.com/turnero/"} className="butonRegistro"></Button >
+                    <img
+                        alt="logo-doconline"
+                        src={fotoFondo2}
+                        className="fotoFondo2"
+                    />
+                    <h1 className='titulo'>Valida tú identidad en Mi Argentina</h1>
+                    <ul className='texto'>
+                        <li>Ingresar el <strong>domicilio real</strong> dónde van a estar tus plantas.</li>
+                        <li>Siempre poner <strong>9 plantas</strong>, ya que es el maximo de numeros de plantas por personas</li>
+                        <li>Actualizaciones en la <strong>Ley 27.350</strong>. Cabe destacar que la ley NO es retroactiva.Por lo tanto, los permisos/renovaciones que se realizaron a partir del 20/04/23 van a tener validez de 3 años.</li>
+                    </ul>
+                    <Button type="submit" target={"__blank"} text={"Valida tu identidad"} ruta={"https://reprocann.msal.gob.ar/auth"} className="butonRegistro"></Button >
                 </motion.div>
 
                 <div className='img-fondoPaso1'>
@@ -75,18 +84,9 @@ export default function MetodosDePago({ setMostrarEncabezado }) {
                     exit={{ opacity: 0 }}
                     className='info-container'
                 >
-                    <img
-                        alt="logo-doconline"
-                        src={fotoFondo2}
-                        className="fotoFondo2"
-                    />
-                    <h1 className='titulo'>Valida tú identidad en Mi Argentina</h1>
-                    <ul className='texto'>
-                        <li>Ingresar el <strong>domicilio real</strong> dónde van a estar tus plantas.</li>
-                        <li>Siempre poner <strong>9 plantas</strong>, ya que es el maximo de numeros de plantas por personas</li>
-                        <li>Actualizaciones en la <strong>Ley 27.350</strong>. Cabe destacar que la ley NO es retroactiva.Por lo tanto, los permisos/renovaciones que se realizaron a partir del 20/04/23 van a tener validez de 3 años.</li>
-                    </ul>
-                    <Button type="submit" target={"__blank"} text={"Valida tu identidad"} ruta={"https://reprocann.msal.gob.ar/auth"} className="butonRegistro"></Button >
+                    <h1 className='titulo'>Registrate en la App Doc Online</h1>
+                    <p className='texto'>Ingresa a la app y completa tus datos, allí te guiaremos para sacar turno, pagar y completar tus datos para los formularios de Declaración Jurada y Consentimiento Informado.</p>
+                    <Button type="submit"  target={"__blank"} text={"Registrarse"} ruta={"https://doconlineargentina.com/turnero/"} className="butonRegistro"></Button >
                 </motion.div>
             </div>
 
