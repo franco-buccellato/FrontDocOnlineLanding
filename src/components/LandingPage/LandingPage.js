@@ -28,10 +28,10 @@ const LandingPage = ({setMostrarEncabezado}) => {
             <QuienesSomos />
             <Servicios/>
             <Renovacion />
-            <UsoPractico />
             <QuienesPueden />
             <ComoFunciona/>
             <Opiniones />
+            <UsoPractico />
             <Faq />
             <FormularioLanding/>
             <Footer/>
