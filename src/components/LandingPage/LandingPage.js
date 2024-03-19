@@ -27,11 +27,11 @@ const LandingPage = ({setMostrarEncabezado}) => {
             <CalidadYBeneficios />
             <QuienesSomos />
             <Servicios/>
-            <ComoFunciona/>
-            <QuienesPueden />
-            <Opiniones />
             <Renovacion />
             <UsoPractico />
+            <QuienesPueden />
+            <ComoFunciona/>
+            <Opiniones />
             <Faq />
             <FormularioLanding/>
             <Footer/>
