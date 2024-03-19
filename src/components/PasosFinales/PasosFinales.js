@@ -52,11 +52,6 @@ export default function MetodosDePago({ setMostrarEncabezado }) {
                     exit={{ opacity: 0 }}
                     className='info-container'
                 >
-                    <img
-                        alt="logo-doconline"
-                        src={fotoFondo2}
-                        className="fotoFondo2"
-                    />
                     <h1 className='titulo'>Valida tú identidad en Mi Argentina</h1>
                     <ul className='texto'>
                         <li>Ingresar el <strong>domicilio real</strong> dónde van a estar tus plantas.</li>
@@ -84,9 +79,14 @@ export default function MetodosDePago({ setMostrarEncabezado }) {
                     exit={{ opacity: 0 }}
                     className='info-container'
                 >
+                    <img
+                        alt="logo-doconline"
+                        src={fotoFondo2}
+                        className="fotoFondo2"
+                    />
                     <h1 className='titulo'>Registrate en la App Doc Online</h1>
                     <p className='texto'>Ingresa a la app y completa tus datos, allí te guiaremos para sacar turno, pagar y completar tus datos para los formularios de Declaración Jurada y Consentimiento Informado.</p>
-                    <Button type="submit"  target={"__blank"} text={"Registrarse"} ruta={"https://doconlineargentina.com/turnero/"} className="butonRegistro"></Button >
+                    <Button type="submit" target={"__blank"} text={"Registrarse"} ruta={"https://doconlineargentina.com/turnero/"} className="butonRegistro"></Button >
                 </motion.div>
             </div>
 
