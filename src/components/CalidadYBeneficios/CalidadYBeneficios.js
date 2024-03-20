@@ -261,12 +261,12 @@ const Calidad = styled.div`
     }
 
     .fondoBlanco{
-        height: 160vh;
+        height: 120vh;
         width: 80vw;
         background-color: white;
         position: absolute;
         z-index: 2;
-        top: 200vh;
+        top: 160vh;
         right: auto;
         margin: auto;
         border-radius: 10%;
