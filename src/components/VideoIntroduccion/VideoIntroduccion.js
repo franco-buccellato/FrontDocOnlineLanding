@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import { motion } from "framer-motion";
 
 
-function ComoFunciona() {
+function VdeoIntroduccion() {
 
     return (
         <>
             <Separador />
-            <ContenedorComoFunciona id='como-funciona'>
+            <VdeoIntroduccionContainer id='como-funciona'>
                 <div className='content'>
                     <motion.div
                         initial={{ opacity: 0, x: -10 }}
@@ -58,14 +58,17 @@ function ComoFunciona() {
                         </div>
                     </motion.div>
                 </div>
-            </ContenedorComoFunciona>
+                <div className='container-video'>
+                    <iframe id='video-1' src="https://www.youtube.com/embed/2EpdYYa5oC8" allow="fullscreen" allowFullScreen="" style={{ minHeight: 'auto', height: '100%', transform: 'none', width: '100%', borderRadius: '10px' }}></iframe>
+                </div>
+            </VdeoIntroduccionContainer>
         </>
     );
 }
 
-export default ComoFunciona;
+export default VdeoIntroduccion;
 
-const ContenedorComoFunciona = styled.div`
+const VdeoIntroduccionContainer = styled.div`
     width: 100%;
     background: white;
     padding: 6rem 0;
@@ -74,11 +77,11 @@ const ContenedorComoFunciona = styled.div`
         margin: 9rem 0 0 0;
         padding: 5rem 0 2rem 0;
     }
-    .content{
+    .container-video{
         width: 60%;
         display: flex;
-        flex-direction: column;
-        margin: 0 auto;
+        margin: 6rem auto 0rem auto;
+        height: 30rem;
         @media only screen and (max-width: 1540px) {
             width: 74%;
         }
@@ -88,73 +91,6 @@ const ContenedorComoFunciona = styled.div`
         @media only screen and (max-width: 920px){
             flex-direction: column;
             justify-content: center;
-        }
-
-        .container-text{
-            width: 100%;
-            text-align: center;
-
-            span{
-                color: #00b1ff;
-                text-transform: uppercase;
-                font-size: 1.2rem;
-                font-weight: 600;
-                text-align: end;
-            }
-            h3{
-                font-weight: 600;
-                font-size: 1.8rem;
-                margin-top: 3rem;
-                margin-bottom: 4rem;
-            }
-
-        }
-        .container-pasos{
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 1rem;
-            grid-row-gap: 1rem;
-
-            @media only screen and (max-width: 1540px) {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            @media only screen and (max-width: 920px) {
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-
-            .card{
-                padding: 2rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                box-shadow: 0 0 8px rgba(0,0,0,.2);
-                border: none;
-
-                @media only screen and (max-width: 920px) {
-                    padding: 1rem;
-                }
-
-                svg{
-                    margin: 1rem 0;
-                    color: #00b1ff;
-                }
-                span{
-                    text-transform: uppercase;
-                    font-weight: 500;
-                }
-                p{
-                    text-align: center;
-                    margin-top: 1rem;
-                }
-                a{
-                    color: #00b1ff;
-                }
-            }
-
-
         }
     }
 `

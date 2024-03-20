@@ -36,7 +36,7 @@ function Faq() {
                     <Accordion.Item eventKey="2">
                         <Accordion.Header>¿Cuánto tarda Reprocann en aprobar mi permiso?</Accordion.Header>
                         <Accordion.Body>
-                            No hay un tiempo de demora exacto, en general tardan entre 1 y 90 días en aprobar. Por eso recomendamos chequear el estado de tu permiso.
+                            No hay un tiempo de demora exacto, en general tardan entre 3 a 4 meses. Como hay aprobaciones todos los dias, tambien pueden aprobartelo mucho antes.
                         </Accordion.Body>
                     </Accordion.Item>
 
