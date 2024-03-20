@@ -8,7 +8,7 @@ import FormularioLanding from '../FormularioLanding/FormularioLanding';
 import Renovacion from '../Renovacion/Renovacion';
 import QuienesSomos from '../QuienesSomos/QuienesSomos';
 import Opiniones from '../Opiniones/Opiniones';
-import VdeoIntroduccion from '../VdeoIntroduccion/VdeoIntroduccion';
+import VideoIntroduccion from '../VideoIntroduccion/VideoIntroduccion';
 import QuienesPueden from '../QuienesPueden/QuienesPueden';
 import Faq from '../Faq/Faq';
 import { useEffect } from 'react';
@@ -25,7 +25,7 @@ const LandingPage = ({setMostrarEncabezado}) => {
         <div className='landing-page'>
             <CuadradosFondo className='cuadradoFondo'/>
             <Inicio/>
-            <VdeoIntroduccion />
+            <VideoIntroduccion />
             <CalidadYBeneficios />
             <QuienesSomos />
             <Servicios/>

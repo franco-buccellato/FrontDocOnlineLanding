@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import { motion } from "framer-motion";
 
 
-function VdeoIntroduccion() {
+function VideoIntroduccion() {
 
     return (
         <>
             <Separador />
-            <VdeoIntroduccionContainer id='como-funciona'>
+            <VideoIntroduccionContainer id='como-funciona'>
                 <div className='content'>
                     <motion.div
                         initial={{ opacity: 0, x: -10 }}
@@ -61,14 +61,14 @@ function VdeoIntroduccion() {
                 <div className='container-video'>
                     <iframe id='video-1' src="https://www.youtube.com/embed/2EpdYYa5oC8" allow="fullscreen" allowFullScreen="" style={{ minHeight: 'auto', height: '100%', transform: 'none', width: '100%', borderRadius: '10px' }}></iframe>
                 </div>
-            </VdeoIntroduccionContainer>
+            </VideoIntroduccionContainer>
         </>
     );
 }
 
-export default VdeoIntroduccion;
+export default VideoIntroduccion;
 
-const VdeoIntroduccionContainer = styled.div`
+const VideoIntroduccionContainer = styled.div`
     width: 100%;
     background: white;
     padding: 6rem 0;
