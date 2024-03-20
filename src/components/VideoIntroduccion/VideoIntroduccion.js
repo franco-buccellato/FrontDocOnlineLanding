@@ -20,17 +20,13 @@ export default VideoIntroduccion;
 
 const VideoIntroduccionContainer = styled.div`
     width: 100%;
-    background: white;
-    padding: 2rem 0;
-    margin: 4rem 0 0 0;
+    margin: 2rem ;
     @media only screen and (max-width: 920px){
-        margin: 4rem 0 0 0;
-        padding: 2rem 0 2rem 0;
+        margin: 2rem 0 ;
     }
     .container-video{
         width: 60%;
         display: flex;
-        margin: 6rem auto 0rem auto;
         height: 30rem;
         @media only screen and (max-width: 1540px) {
             width: 74%;
