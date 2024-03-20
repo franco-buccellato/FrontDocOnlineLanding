@@ -26,7 +26,10 @@ const VideoIntroduccionContainer = styled.div`
     }
     .container-video{
         width: 60%;
+        margin: auto;
         display: flex;
+        justify-content: center;
+        align-items: center;
         height: 30rem;
         @media only screen and (max-width: 1540px) {
             width: 74%;
