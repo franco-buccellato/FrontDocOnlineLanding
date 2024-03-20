@@ -266,7 +266,7 @@ const Calidad = styled.div`
         background-color: white;
         position: absolute;
         z-index: 2;
-        top: 100vh;
+        top: 200vh;
         right: auto;
         margin: auto;
         border-radius: 10%;
