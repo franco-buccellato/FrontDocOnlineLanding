@@ -32,7 +32,7 @@ export default Inicio;
 
 const Home = styled.div`
     width: 100%;
-    height: 90vh; //se resta el Encabezado
+    height: 100vh; //se resta el Encabezado
     position: relative;
     @media only screen and (max-width: 1024px) {
         background-image: url('../../imagenes/cartaAbierta.webp');
