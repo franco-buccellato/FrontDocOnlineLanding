@@ -6,6 +6,7 @@ function Renovacion() {
 
     return (
         <>
+            <Separador />
             <ContenedorComoFunciona id='renovacion'>
                 <div className='content'>
                     <motion.div
@@ -156,5 +157,23 @@ const ContenedorComoFunciona = styled.div`
             flex-direction: column;
             justify-content: center;
         }
+    }
+`
+
+const Separador = styled.div`
+
+    width: 100%;
+    height: 14rem;
+    background: white;
+    margin-top: 0;
+    z-index: 1;
+    -webkit-transform: skewY(5deg) translateY(100px);
+    -moz-transform: skewY(5deg) translateY(100px);
+    -ms-transform: skewY(5deg) translateY(100px);
+    transform: skewY(5deg) translateY(100px);
+    position: absolute;
+
+    @media only screen and (max-width: 920px){
+        height: 6rem;
     }
 `
