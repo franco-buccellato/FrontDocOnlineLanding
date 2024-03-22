@@ -92,12 +92,12 @@ export default CalidadYBeneficios;
 
 const Calidad = styled.div`
     width: 100%;
-    padding-top: 18rem;
+    padding-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     @media only screen and (max-width: 1024px) {
-        padding: 8rem 0 0rem 0 ;
+        padding: 4rem 0 0rem 0 ;
     }
     .content{
         width: 60%;

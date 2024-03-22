@@ -20,7 +20,7 @@ export default VideoIntroduccion;
 
 const VideoIntroduccionContainer = styled.div`
     width: 100%;
-    padding: 2rem 0 0 0;
+    padding: 1rem 0;
     margin: 0 0 0 0;
     @media only screen and (max-width: 920px){
         margin: 0rem 0 0 0;
