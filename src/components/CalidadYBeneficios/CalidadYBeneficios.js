@@ -7,7 +7,6 @@ import { motion } from "framer-motion"
 function CalidadYBeneficios() {
     return (
         <Calidad id='nosotros'>
-            <div className='fondoBlanco'></div>
             <div className='content'>
                 <motion.div
                         initial={{ opacity: 0, x: -10 }}
