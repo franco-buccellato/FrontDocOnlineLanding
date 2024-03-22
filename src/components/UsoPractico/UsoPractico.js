@@ -197,6 +197,7 @@ const ContainerUsoPractico = styled.div`
                 border: none;
                 @media only screen and (max-width: 1024px){
                     width: 100%;
+                    max-width: none;
                     height: 20rem;
                     border-radius: 10px 10px 0 0 !important;
                 }
