@@ -40,11 +40,11 @@ export default Renovacion;
 const ContenedorComoFunciona = styled.div`
     width: 100%;
     background: white;
-    padding: 6rem 0;
+    padding-top: 6rem;
     margin: 16rem 0 0 0;
     @media only screen and (max-width: 920px){
         margin: 9rem 0 0 0;
-        padding: 5rem 0 2rem 0;
+        padding: 5rem 0 0rem 0;
     }
     .content{
         width: 60%;
