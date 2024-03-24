@@ -12,7 +12,7 @@
           var(--c) 50%  100%, 
           var(--c) 100% 50%, 
           var(--c) 0    50%;
-    background-size: 13.4px 13.4px;
+    background-size: 6px 6px;
     background-repeat: no-repeat;
     animation: spinner-3hs4a3 1s infinite;
   }
