@@ -31,7 +31,7 @@ export default function TarjetaServicio({ precio, listadoBeneficios }) {
                     <span className='signo'>$</span>
                     <span className='precio'>
                         {precioTransf !== null ? precioTransf : precio}
-                        <LoaderPrecios />
+                        {precioTransf === null && <LoaderPrecios />}
                     </span>
                     <span className='periodo'>/por 3 años</span>
                 </div>
@@ -49,6 +49,7 @@ export default function TarjetaServicio({ precio, listadoBeneficios }) {
                 </Link>
             </footer>
         </TarjetaServicioContainer>
+
     )
 }
 
