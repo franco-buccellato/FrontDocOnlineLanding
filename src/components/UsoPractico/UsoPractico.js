@@ -101,7 +101,7 @@ export default function UsoPractico() {
 
 const ContainerUsoPractico = styled.div`
     width: 100%;
-    /* padding: 0rem 0 0rem 0 ; */
+    margin-top: 4rem;
 
     .container-imgFondo{
         position: absolute;
