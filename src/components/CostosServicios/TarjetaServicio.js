@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import axios from 'axios';
+import LoaderPrecios from '../LoaderPrecios/LoaderPrecios';
 
 export default function TarjetaServicio({ precio, listadoBeneficios }) {
 
@@ -28,7 +29,10 @@ export default function TarjetaServicio({ precio, listadoBeneficios }) {
                 <span className='tipo'>Por primera vez</span>
                 <div className='container-precio'>
                     <span className='signo'>$</span>
-                    <span className='precio'>{precioTransf !== null ? precioTransf : precio}</span>
+                    <span className='precio'>
+                        {precioTransf !== null ? precioTransf : precio}
+                        <LoaderPrecios />
+                    </span>
                     <span className='periodo'>/por 3 años</span>
                 </div>
             </header>
