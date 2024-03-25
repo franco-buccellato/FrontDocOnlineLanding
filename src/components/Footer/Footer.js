@@ -22,7 +22,7 @@ function Footer() {
                         </div>
                         <div className='container-segunda'>
                             <ul>
-                                <li><a href="#como-funciona">Como Funciona</a></li>
+                                <li><a href="#como-funciona">Guía Rapida</a></li>
                                 <li><a href="#nosotros">Nosotros</a></li>
                                 <li><a href="#atencion-distancia">Servicio a Distancia</a></li>
                                 <li><a href="#renovacion">Renovación</a></li>
