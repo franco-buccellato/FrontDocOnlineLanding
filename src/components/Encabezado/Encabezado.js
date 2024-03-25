@@ -54,7 +54,6 @@ function Encabezado() {
                 {/* </a> */}
                 <nav ref={navRef}>
                     <ul>
-                        <li onClick={showNavbar}><a href="#beneficios">Beneficios</a></li>
                         <li onClick={showNavbar}><a href="#nosotros">Nosotros</a></li>
                         <li onClick={showNavbar}><a href="#atencion-distancia">Servicio a Distancia</a></li>
                         <li onClick={showNavbar}><a href="#renovacion">Renovación</a></li>

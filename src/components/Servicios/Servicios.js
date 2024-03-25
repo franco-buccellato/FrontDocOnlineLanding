@@ -42,6 +42,7 @@ export default Servicios;
 
 const ContenedorServicios = styled.div`
     width: 100%;
+    padding-top: 4rem;
     .content{
         width: 60%;
         margin: auto;
