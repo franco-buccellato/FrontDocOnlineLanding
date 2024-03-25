@@ -21,16 +21,18 @@ function Footer() {
                         </div>
                         <div className='container-segunda'>
                             <ul>
-                                <li className='titulo'>Empresa</li>
-                                <li><a href="#nosotros">Nosotros</a></li>
-                                <li><a href="#atencion-distancia">Atención a Distancia</a></li>
-                                <li><a href="#como-funciona">Como Funciona</a></li>
-                                <li><a href="#renovacion">Renovación</a></li>
-                                <li><a href="#uso-practico">Como funciona</a></li>
+                                <li onClick={showNavbar}><a href="#como-funciona">Como Funciona</a></li>
+                                <li onClick={showNavbar}><a href="#nosotros">Nosotros</a></li>
+                                <li onClick={showNavbar}><a href="#atencion-distancia">Servicio a Distancia</a></li>
+                                <li onClick={showNavbar}><a href="#renovacion">Renovación</a></li>
+                                <li onClick={showNavbar}><a href="#acceso">Acceso</a></li>
+                                <li onClick={showNavbar}><a href="#uso-practico">Uso Práctico</a></li>
+                                <li onClick={showNavbar}><a href="#preguntas">Preguntas frencuentes</a></li>
+                                <li onClick={showNavbar}><Link to={'/costosServicios'}>Precios</Link></li>
                             </ul>
                         </div>
                     </div>
-                    <div className='terceraYCuertaColumna'>
+                    {/* <div className='terceraYCuertaColumna'>
                         <div className='container-tercera'>
                             <ul>
                                 <li className='titulo'>Cliente</li>
@@ -44,7 +46,7 @@ function Footer() {
                                 <li>Registro de Ayuda Médica</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className='copy-mineris'>
