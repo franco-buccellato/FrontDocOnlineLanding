@@ -37,7 +37,7 @@ const QuienesSomosContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem 0;
+    padding: 8rem 0;
     @media only screen and (max-width: 1324px) {
         padding: 8rem 0 0rem 0 ;
     }
@@ -47,7 +47,6 @@ const QuienesSomosContainer = styled.div`
     .content{
         width: 60%;
         margin: auto;
-        padding: 6rem 0;
         z-index: 2;
         display: flex;
         justify-content: center;
