@@ -98,7 +98,7 @@ const Header = styled.header`
     z-index: 1000;
 
     .content{
-        width: 80%;
+        width: 84%;
         margin: auto;
         display: flex;
     }
