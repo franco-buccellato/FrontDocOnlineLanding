@@ -21,14 +21,14 @@ function Footer() {
                         </div>
                         <div className='container-segunda'>
                             <ul>
-                                <li onClick={showNavbar}><a href="#como-funciona">Como Funciona</a></li>
-                                <li onClick={showNavbar}><a href="#nosotros">Nosotros</a></li>
-                                <li onClick={showNavbar}><a href="#atencion-distancia">Servicio a Distancia</a></li>
-                                <li onClick={showNavbar}><a href="#renovacion">Renovación</a></li>
-                                <li onClick={showNavbar}><a href="#acceso">Acceso</a></li>
-                                <li onClick={showNavbar}><a href="#uso-practico">Uso Práctico</a></li>
-                                <li onClick={showNavbar}><a href="#preguntas">Preguntas frencuentes</a></li>
-                                <li onClick={showNavbar}><Link to={'/costosServicios'}>Precios</Link></li>
+                                <li><a href="#como-funciona">Como Funciona</a></li>
+                                <li><a href="#nosotros">Nosotros</a></li>
+                                <li><a href="#atencion-distancia">Servicio a Distancia</a></li>
+                                <li><a href="#renovacion">Renovación</a></li>
+                                <li><a href="#acceso">Acceso</a></li>
+                                <li><a href="#uso-practico">Uso Práctico</a></li>
+                                <li><a href="#preguntas">Preguntas frencuentes</a></li>
+                                <li><Link to={'/costosServicios'}>Precios</Link></li>
                             </ul>
                         </div>
                     </div>
