@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import logo from '../../imagenes/Logotipo.webp';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
