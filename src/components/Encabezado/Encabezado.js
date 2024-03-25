@@ -54,11 +54,14 @@ function Encabezado() {
                 {/* </a> */}
                 <nav ref={navRef}>
                     <ul>
+                        <li onClick={showNavbar}><a href="#beneficios">Beneficios</a></li>
                         <li onClick={showNavbar}><a href="#nosotros">Nosotros</a></li>
-                        <li onClick={showNavbar}><a href="#atencion-distancia">Atención a Distancia</a></li>
-                        <li onClick={showNavbar}><a href="#como-funciona">Como Funciona</a></li>
+                        <li onClick={showNavbar}><a href="#atencion-distancia">Servicio a Distancia</a></li>
                         <li onClick={showNavbar}><a href="#renovacion">Renovación</a></li>
+                        <li onClick={showNavbar}><a href="#acceso">Acceso</a></li>
+                        <li onClick={showNavbar}><a href="#como-funciona">Como Funciona</a></li>
                         <li onClick={showNavbar}><a href="#uso-practico">Uso Práctico</a></li>
+                        <li onClick={showNavbar}><a href="#preguntas">Preguntas frencuentes</a></li>
                         <li onClick={showNavbar}><Link to={'/costosServicios'}>Precios</Link></li>
                         {
                             estaLogueado() ? <Link to={'/sesion'}><li onClick={showNavbar}>{usuario.nombre}</li></Link> : <Link to={'https://doconlineargentina.com/turnero/'}><li onClick={showNavbar}>Ingresar</li></Link>
@@ -96,7 +99,7 @@ const Header = styled.header`
     z-index: 1000;
 
     .content{
-        width: 70%;
+        width: 80%;
         margin: auto;
         display: flex;
     }

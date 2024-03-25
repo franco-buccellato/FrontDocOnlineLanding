@@ -52,6 +52,7 @@ export default function CostosServicios({ setMostrarEncabezado }) {
                                 key={index}
                                 precio={info.precio}
                                 listadoBeneficios={info.listadoBeneficios}
+                                nombreCard={info.nombreCard}
                             />
                         ))}
                     </div>

@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 function CalidadYBeneficios() {
     return (
-        <Calidad id='nosotros'>
+        <Calidad id='beneficios'>
             {/* <div className='fondoBlanco'></div> */}
             <div className='content'>
                 <motion.div

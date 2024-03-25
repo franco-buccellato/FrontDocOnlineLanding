@@ -5,7 +5,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 function QuienesPueden() {
     return (
-        <QuienesPuedenContainer>
+        <QuienesPuedenContainer id='acceso'>
 
             <motion.div
                 initial={{ opacity: 0, x: -10 }}

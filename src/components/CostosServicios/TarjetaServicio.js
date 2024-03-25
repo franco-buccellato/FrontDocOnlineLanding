@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import axios from 'axios';
 import LoaderPrecios from '../LoaderPrecios/LoaderPrecios';
 
-export default function TarjetaServicio({ precio, listadoBeneficios }) {
+export default function TarjetaServicio({ precio, listadoBeneficios, nombreCard }) {
 
     const [precioTransf, setPrecioTransf] = useState(null);
 
@@ -26,7 +26,9 @@ export default function TarjetaServicio({ precio, listadoBeneficios }) {
         <TarjetaServicioContainer>
 
             <header>
-                <span className='tipo'>Por primera vez</span>
+                {nombreCard.map((titulo, index) => (
+                        <span className='tipo' key={index}>{titulo}</span>
+                ))}
                 <div className='container-precio'>
                     <span className='signo'>$</span>
                     <span className='precio'>

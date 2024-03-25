@@ -4,7 +4,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 function Faq() {
     return (
-        <Calidad>
+        <Calidad id='preguntas'>
 
             <motion.div
                 initial={{ opacity: 0, x: -10 }}
