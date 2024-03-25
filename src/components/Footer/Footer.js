@@ -71,6 +71,7 @@ const FooterContainer = styled.div`
     .content{
         width: 60%;
         display: flex;
+        justify-content: space-between;
         margin: 0 auto;
         gap: 10%;
         @media only screen and (max-width: 1540px) {
