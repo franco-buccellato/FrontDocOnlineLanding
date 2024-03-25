@@ -16,7 +16,7 @@ function ComoFunciona() {
                         className='container-text'
                     >
                         <span>Te contamos en que consiste el servicio</span>
-                        <h3>Guía Rapida</h3>
+                        <h3>Como funciona</h3>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, x: 10 }}
