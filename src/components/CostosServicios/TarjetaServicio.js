@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import axios from 'axios';
 import LoaderPrecios from '../LoaderPrecios/LoaderPrecios';
 
-export default function TarjetaServicio({ precio, listadoBeneficios, nombreCard }) {
+export default function TarjetaServicio({ index: indexPrecio, precio, listadoBeneficios, nombreCard }) {
 
     const [precioTransf, setPrecioTransf] = useState(null);
 
@@ -13,7 +13,7 @@ export default function TarjetaServicio({ precio, listadoBeneficios, nombreCard 
             try {
                 const response = await axios.get('https://v2.doconlineargentina.com/api/turnero.precios');
                 const precioTransf = response.data.precioTransf;
-                setPrecioTransf(precioTransf);
+                indexPrecio === 0 ? setPrecioTransf(precioTransf) : setPrecioTransf(precioTransf * .95);
             } catch (error) {
                 console.error('Error al obtener el precio:', error);
             }

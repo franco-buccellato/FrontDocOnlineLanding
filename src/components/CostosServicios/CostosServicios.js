@@ -50,6 +50,7 @@ export default function CostosServicios({ setMostrarEncabezado }) {
                         {infoSimulada.map((info, index) => (
                             <TarjetaServicio
                                 key={index}
+                                index={index}
                                 precio={info.precio}
                                 listadoBeneficios={info.listadoBeneficios}
                                 nombreCard={info.nombreCard}

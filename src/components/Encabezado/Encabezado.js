@@ -62,9 +62,7 @@ function Encabezado() {
                         <li onClick={showNavbar}><a href="#uso-practico">Uso Práctico</a></li>
                         <li onClick={showNavbar}><a href="#preguntas">Preguntas frencuentes</a></li>
                         <li onClick={showNavbar}><Link to={'/costosServicios'}>Precios</Link></li>
-                        {
-                            estaLogueado() ? <Link to={'/sesion'} target='_blank'><li onClick={showNavbar}>{usuario.nombre}</li></Link> : <Link to={'https://doconlineargentina.com/turnero/'}><li onClick={showNavbar}>Ingresar</li></Link>
-                        }
+                        <Link target='__blank' to={'https://doconlineargentina.com/turnero/'}><li onClick={showNavbar}>Ingresar</li></Link>
                     </ul>
                     <button
                         className="nav-btn nav-close-btn"
