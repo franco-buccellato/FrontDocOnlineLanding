@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { UsuarioContextProvider } from './components/Context/UsuarioContext';
 import LandingPage from './components/LandingPage/LandingPage';
 import Encabezado from './components/Encabezado/Encabezado';
@@ -24,7 +24,7 @@ function App() {
   return (
     <GoogleOAuthProvider clientId="715992003862-grqt5eheumcqua563a8ja387h1hlmadp.apps.googleusercontent.com">
       <UsuarioContextProvider>
-        <BrowserRouter basename='/'>
+        <HashRouter basename='/'>
           <BotonWhatsApp />
           {mostrarEncabezado && <Encabezado />}
           {<Routes>
@@ -36,7 +36,7 @@ function App() {
             <Route exact path = '/sesion' element ={<SectionSesion/>}/>
             <Route exact path = '/paciente/' element ={<PacienteContainer/>}/>
           </Routes>}
-        </BrowserRouter>
+        </HashRouter>
       </UsuarioContextProvider>
     </GoogleOAuthProvider>
   );
