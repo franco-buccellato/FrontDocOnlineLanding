@@ -24,7 +24,7 @@ function App() {
   return (
     <GoogleOAuthProvider clientId="715992003862-grqt5eheumcqua563a8ja387h1hlmadp.apps.googleusercontent.com">
       <UsuarioContextProvider>
-        <BrowserRouter>
+        <BrowserRouter basename='/'>
           <BotonWhatsApp />
           {mostrarEncabezado && <Encabezado />}
           {<Routes>
@@ -32,9 +32,9 @@ function App() {
             <Route exact path='/costosServicios' element={<CostosServicios setMostrarEncabezado={setMostrarEncabezado}/>} />
             <Route exact path='/metodosDePago' element={<MetodosDePago setMostrarEncabezado={setMostrarEncabezado}/>} />
             <Route exact path='/pasosFinales' element={<PasosFinales setMostrarEncabezado={setMostrarEncabezado}/>} />
-            <Route exact path = '/login' element = {<Login setMostrarEncabezado={setMostrarEncabezado}/>}/>
-            <Route exact path = '/sesion' element = {<SectionSesion/>}/>
-            <Route exact path = '/paciente/' element = {<PacienteContainer/>}/>
+            <Route exact path = '/login' element ={<Login setMostrarEncabezado={setMostrarEncabezado}/>}/>
+            <Route exact path = '/sesion' element ={<SectionSesion/>}/>
+            <Route exact path = '/paciente/' element ={<PacienteContainer/>}/>
           </Routes>}
         </BrowserRouter>
       </UsuarioContextProvider>
